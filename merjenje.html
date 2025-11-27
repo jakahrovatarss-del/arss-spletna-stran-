@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merjenje - ARSS Pametno upravljanje vode</title>
+    <meta name="description"
+        content="Pametni vodomeri za natančno merjenje porabe vode. iPerl, MeiTwin, MeiStream, ResidiaJet in drugi napredni merilniki.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Odpri meni">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="nav-links">
+                    <a href="index.html#about" class="nav-link">O nas</a>
+                    <a href="index.html#solutions" class="nav-link">Rešitve</a>
+                    <a href="index.html#services" class="nav-link active">Storitve</a>
+                    <a href="index.html#pricing" class="nav-link">Paketi</a>
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Pametno Merjenje Vode</h1>
+                    <p class="hero-subtitle">Napredni ultrazvočni vodomeri za natančno merjenje, zaznavanje puščanja in
+                        optimizacijo porabe vode.</p>
+                    <div class="hero-actions">
+                        <a href="index.html#contact" class="btn-primary">Poizvedi več</a>
+                        <a href="index.html#pricing" class="btn-secondary">Poglej pakete</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparison Table Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Primerjava Tehnologij</h2>
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th class="feature-col">Funkcionalnost</th>
+                                <th class="traditional-col">
+                                    <div class="col-header">
+                                        <span class="col-icon">📋</span>
+                                        <span>Tradicionalni sistemi</span>
+                                    </div>
+                                </th>
+                                <th class="arss-col">
+                                    <div class="col-header">
+                                        <span class="col-icon">⚡</span>
+                                        <span>ARSS Pametni sistem</span>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name">
+                                    <span class="feature-icon">📊</span>
+                                    Odčitavanje stanja
+                                </td>
+                                <td class="traditional-value">
+                                    <span class="value-badge traditional">Ročno (enkrat letno)</span>
+                                </td>
+                                <td class="arss-value">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Avtomatsko (vsako uro)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">
+                                    <span class="feature-icon">💧</span>
+                                    Zaznavanje puščanja
+                                </td>
+                                <td class="traditional-value">
+                                    <span class="value-badge traditional">Ob prejemu položnice</span>
+                                </td>
+                                <td class="arss-value">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Takojšnje opozorilo</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">
+                                    <span class="feature-icon">🎯</span>
+                                    Natančnost merjenja
+                                </td>
+                                <td class="traditional-value">
+                                    <span class="value-badge traditional">Nizka (mehanski deli)</span>
+                                </td>
+                                <td class="arss-value">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Visoka (ultrazvočno)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">
+                                    <span class="feature-icon">📈</span>
+                                    Analitika porabe
+                                </td>
+                                <td class="traditional-value">
+                                    <span class="value-badge traditional">Ni na voljo</span>
+                                </td>
+                                <td class="arss-value">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Napredna analitika v AURA</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name">
+                                    <span class="feature-icon">🔧</span>
+                                    Vzdrževanje
+                                </td>
+                                <td class="traditional-value">
+                                    <span class="value-badge traditional">Visoki stroški</span>
+                                </td>
+                                <td class="arss-value">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Brez gibljivih delov</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="section" style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+            <div class="container">
+                <h2 class="section-title text-center">Naši Izdelki</h2>
+                <div class="cards-grid">
+                    <!-- iPerl -->
+                    <div class="glass-card">
+                        <h3 style="color: var(--primary);">iPERL</h3>
+                        <p><strong>Ultrazvočni vodomer brez gibljivih delov</strong></p>
+                        <ul class="card-list">
+                            <li>Qn 1,5 - Qn 10 m³/h</li>
+                            <li>Natančnost ±1%</li>
+                            <li>15-letna avtonomija</li>
+                            <li>Večkanalno odčitavanje</li>
+                        </ul>
+                        <a href="https://arss.si/wp-content/uploads/2018/11/EN-iPERL-Intl-Data-Sheet.pdf"
+                            target="_blank" class="btn-secondary"
+                            style="margin-top: 1rem; display: inline-block;">Tehnični list</a>
+                    </div>
+
+                    <!-- MeiTwin -->
+                    <div class="glass-card">
+                        <h3 style="color: var(--primary);">MeiTwin</h3>
+                        <p><strong>Dvojni ultrazvočni vodomer</strong></p>
+                        <ul class="card-list">
+                            <li>Dvojna merilna cev</li>
+                            <li>do Qn 15 m³/h</li>
+                            <li>Idealen za večstanovanjske objekte</li>
+                            <li>Vgrajena komunikacija</li>
+                        </ul>
+                        <a href="https://arss.si/wp-content/uploads/2018/12/EN-MeiTwin-Data-Sheet-1.pdf" target="_blank"
+                            class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Tehnični list</a>
+                    </div>
+
+                    <!-- MeiStream -->
+                    <div class="glass-card">
+                        <h3 style="color: var(--primary);">MeiStream</h3>
+                        <p><strong>Modularni ultrazvočni vodomer</strong></p>
+                        <ul class="card-list">
+                            <li>Qn 1,5 - Qn 6 m³/h</li>
+                            <li>Kompakten dizajn</li>
+                            <li>Več različic (Plus, FS, RF)</li>
+                            <li>Dolga življenjska doba</li>
+                        </ul>
+                        <a href="https://arss.si/wp-content/uploads/2018/11/EN-MeiStream-Data-Sheet-1.pdf"
+                            target="_blank" class="btn-secondary"
+                            style="margin-top: 1rem; display: inline-block;">Tehnični list</a>
+                    </div>
+
+                    <!-- ResidiaJet -->
+                    <div class="glass-card">
+                        <h3 style="color: var(--primary);">ResidiaJet</h3>
+                        <p><strong>Enocevni suhi vodomer</strong></p>
+                        <ul class="card-list">
+                            <li>Qn 1,5 - Qn 6 m³/h</li>
+                            <li>Magnetski odčitek</li>
+                            <li>Odporen na nečistoče</li>
+                            <li>Dolgotrajna točnost</li>
+                        </ul>
+                        <a href="https://arss.si/wp-content/uploads/2018/11/EN-ResidiaJet-Data-Sheet-1.pdf"
+                            target="_blank" class="btn-secondary"
+                            style="margin-top: 1rem; display: inline-block;">Tehnični list</a>
+                    </div>
+
+                    <!-- Serija 120-640 -->
+                    <div class="glass-card">
+                        <h3 style="color: var(--primary);">Serija 120-640</h3>
+                        <p><strong>Industrijski vodomeri</strong></p>
+                        <ul class="card-list">
+                            <li>Qn 15 - Qn 600 m³/h</li>
+                            <li>Woltman tehnologija</li>
+                            <li>Kombinirana različica</li>
+                            <li>Za velike pretoke</li>
+                        </ul>
+                        <a href="https://arss.si/wp-content/uploads/2018/11/EN-120-Data-Sheet.pdf" target="_blank"
+                            class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Tehnični list</a>
+                    </div>
+
+                    <!-- Custom Solution -->
+                    <div class="glass-card" style="border: 2px solid var(--accent);">
+                        <h3 style="color: var(--accent);">Prilagojena Rešitev?</h3>
+                        <p><strong>Potrebujete posebno rešitev?</strong></p>
+                        <p>Naša ekipa vam bo pomagala izbrati optimalno kombinacijo vodomerov in komunikacije za
+                            vaše potrebe.</p>
+                        <div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
+                            <a href="index.html#contact" class="btn-primary">Kontaktirajte nas</a>
+                            <a href="index.html#pricing" class="btn-secondary">Paket ponudbe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container text-center">
+                <p>© 2025 ARSS d.o.o. Vse pravice pridržane.</p>
+                <p style="margin-top: 0.5rem;">
+                    <a href="https://arss.si" target="_blank" style="color: var(--accent);">arss.si</a> |
+                    <a href="mailto:info@arss.si" style="color: var(--accent); margin-left: 1rem;">info@arss.si</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
