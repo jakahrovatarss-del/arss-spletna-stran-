@@ -760,7 +760,7 @@ h3 {
   border-radius: var(--radius-sm);
   font-family: inherit;
   background: rgba(255, 255, 255, 0.9);
-  translation: var(--transition);
+  transition: var(--transition);
 }
 
 .form-group input:focus,
@@ -781,7 +781,7 @@ h3 {
 
 .file-upload-input {
   color: rgba(255, 255, 255, 0.9) !important;
-  background: rgba(255, 255, 255, 0 08) !important;
+  background: rgba(255, 255, 255, 0.08) !important;
   border: 2px dashed rgba(255, 255, 255, 0.3) !important;
   border-radius: 12px !important;
   padding: 1.25rem !important;
@@ -812,7 +812,8 @@ h3 {
   border: none;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
-  cursor: pointer font-weight: 600;
+  cursor: pointer;
+  font-weight: 600;
   margin-right: 1rem;
   transition: all 0.3s ease;
 }
