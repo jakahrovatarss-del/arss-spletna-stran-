@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Za gospodinjstva - ARSS Pametno upravljanje vode</title>
+    <meta name="description"
+        content="Prihranite vodo in denar v svojem domu s pametnim vodomerom ARSS. Enostavna namestitev, spremljanje v realnem času, takojšnja obvestila o puščanju.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Odpri meni">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Domov</a>
+                    <a href="gospodinjstva.html" class="nav-link active">Gospodinjstva</a>
+                    <a href="industrija.html" class="nav-link">Industrija</a>
+                    <a href="index.html#about" class="nav-link">O nas</a>
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Prihranite vodo in denar v svojem domu</h1>
+                    <p class="hero-subtitle">Odkrijte puščanje, preden pride račun. Pametni vodomer ARSS vas obvesti
+                        takoj.</p>
+                    <div class="hero-actions">
+                        <a href="#packages" class="btn-primary">Izberite paket</a>
+                        <a href="#how-it-works" class="btn-secondary">Kako deluje?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem/Solution Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Zakaj pametni vodomer?</h2>
+                <div class="grid-3" style="margin-top: 3rem;">
+                    <div class="glass-card text-center">
+                        <div class="card-icon" style="font-size: 3rem;">⚠️</div>
+                        <h3>Problem</h3>
+                        <p>Visok račun za vodo? WC kotliček pušča in vi tega ne veste. Puščanje lahko mesečno stane
+                            <strong>50€+</strong>.
+                        </p>
+                    </div>
+                    <div class="glass-card text-center" style="border: 2px solid var(--accent);">
+                        <div class="card-icon" style="font-size: 3rem;">📱</div>
+                        <h3>Rešitev</h3>
+                        <p>Pametni vodomer zazna puščanje in <strong>vas takoj obvesti</strong> na telefon. Ugasnete
+                            vodo in se izognete visokemu računu.</p>
+                    </div>
+                    <div class="glass-card text-center">
+                        <div class="card-icon" style="font-size: 3rem;">💰</div>
+                        <h3>Rezultat</h3>
+                        <p>Družine <strong>prihranijo do 30%</strong> stroškov za vodo. Povprečno 300€ letno!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Kako deluje v 3 korakih</h2>
+                <div class="grid-3" style="margin-top: 3rem;">
+                    <div class="glass-card">
+                        <div class="card-icon" style="font-size: 3rem;">🔧</div>
+                        <h3>1. Namestitev</h3>
+                        <p>Naš tehnik v 1 uri zamenja vaš star vodomer s pametnim. Brez gradnje, brez trganja.</p>
+                        <ul class="card-list">
+                            <li>Hiter servis</li>
+                            <li>Brez dodatnih del</li>
+                            <li>Takoj deluje</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon" style="font-size: 3rem;">📊</div>
+                        <h3>2. Spremljanje</h3>
+                        <p>Prenesite mobilno aplikacijo AURA in spremljajte porabo kadarkoli. Grafični prikazi,
+                            zgodovina,
+                            primerjave.</p>
+                        <ul class="card-list">
+                            <li>Mobilna aplikacija</li>
+                            <li>Spletni portal 24/7</li>
+                            <li>Enostavno razumljivo</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon" style="font-size: 3rem;">🔔</div>
+                        <h3>3. Varčevanje</h3>
+                        <p>Sistema vas obvesti, če zazna puščanje ali neobičajno porabo. Ukrepajte takoj in varčujte!
+                        </p>
+                        <ul class="card-list">
+                            <li>Takojšnja obvestila</li>
+                            <li>Aplikacija ali SMS</li>
+                            <li>Preventiva pred škodo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Paketi za gospodinjstva</h2>
+                    <p class="section-desc">Izberite paket, ki ustreza vašim potrebam. Vsi paketi vključujejo mobilno
+                        aplikacijo.</p>
+                </div>
+                <div class="pricing-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 800px; margin: 0 auto;">
+                    <!-- Silver Package -->
+                    <div class="pricing-card glass-card">
+                        <div class="pricing-header">
+                            <h3 class="package-name">Srebrni</h3>
+                            <div class="price">4€ <span class="period">/ mesec</span></div>
+                            <p class="package-desc">Osnovno spremljanje za varčne družine.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> Pametni vodomer iPerl</li>
+                            <li><span class="check">✓</span> Mesečni pregled porabe</li>
+                            <li><span class="check">✓</span> Opozorila za puščanje</li>
+                            <li><span class="check">✓</span> Mobilna aplikacija</li>
+                            <li><span class="check">✓</span> Brez vezave</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn-secondary w-100">Povprašaj</a>
+                    </div>
+
+                    <!-- Gold Package -->
+                    <div class="pricing-card glass-card popular">
+                        <div class="popular-tag">Najbolj priljubljeno</div>
+                        <div class="pricing-header">
+                            <h3 class="package-name">Zlati</h3>
+                            <div class="price">7€ <span class="period">/ mesec</span></div>
+                            <p class="package-desc">Popoln nadzor in mir v vašem domu.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> Vse iz Srebrnega paketa</li>
+                            <li><span class="check">✓</span> <strong>Spremljanje v realnem času 24/7</strong></li>
+                            <li><span class="check">✓</span> <strong>Takojšnja obvestila (SMS + push)</strong></li>
+                            <li><span class="check">✓</span> Napredna analitika porabe</li>
+                            <li><span class="check">✓</span> Opozorila za zmrzal</li>
+                            <li><span class="check">✓</span> Prioritetna podpora</li>
+                        </ul>
+                        <a href="index.html#contact" class="btn-primary w-100">Naroči zdaj</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Pogosta vprašanja</h2>
+                </div>
+                <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Kako poteka namestitev?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Naš certificiran tehnik pride na vaš naslov, odstrani star vodomer in v približno 1 uri
+                                namesti novega. Namestitev ne zahteva dodatnih gradbenih del. Po namestitvi vam pokaže,
+                                kako uporabljati aplikacijo.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Ali potrebujem internet doma?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ne! Pametni vodomer uporablja mobilno omrežje (NB-IoT tehnologijo), zato deluje
+                                popolnoma samostojno brez vašega WiFi-ja ali interneta. Podatke lahko gledate na
+                                telefonu kjerkoli.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Koliko zares prihranim?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Povprečna družina prihrani <strong>20-30% stroškov za vodo</strong>, kar je približno
+                                300€ letno. Največji prihranki nastanejo z zgodnjim odkrivanjem puščanj (pušča WC,
+                                pipe) in bolj zavestno porabo.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Kaj če se preselim?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Vodomer ostane na naslovu (je last vodovoda ali lastnika stanovanja). Lahko pa
+                                prenehate z mesečno naročnino kadarkoli, brez stroškov. V primeru selitve vas bomo
+                                z veseljem povezali z novim lastnikom.</p>
+                        </div>
+                    </div>
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Ali je to varno za moje podatke?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutno! Vsi podatki so šifrirani in shranjeni v skladu z GDPR predpisi. Vidite lahko
+                                samo svoje podatke. Nobenih osebnih informacij ne prodajamo tretjim osebam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-dark text-white">
+            <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <h2 class="section-title text-white">Zainteresirani?</h2>
+                        <p class="mb-4">Stopite v stik z nami za brezplačen informativni sestanek ali ponudbo.</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="label">Telefon:</span>
+                                <span class="value"><a href="tel:+38641357480" class="text-white">+386 41 357
+                                        480</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="label">Email:</span>
+                                <span class="value"><a href="mailto:info@arss.si"
+                                        class="text-white">info@arss.si</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container glass-card">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Ime in priimek" aria-label="Ime in priimek" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-poštni naslov" aria-label="E-poštni naslov" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Telefon" aria-label="Telefon">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Sporočilo (opcijsko)" rows="3" aria-label="Sporočilo"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-100">Pošlji povpraševanje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <p>&copy; 2025 ARSS d.o.o. Vse pravice pridržane.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./analytics-config.js"></script>
+    <script src="./form-config.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

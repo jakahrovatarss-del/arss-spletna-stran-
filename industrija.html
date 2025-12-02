@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Za industrijo in vodovode - ARSS Pametno upravljanje vode</title>
+    <meta name="description"
+        content="Celovite rešitve za upravljanje vodnih omrežij. Pametni vodomeri, AURA platforma, integracije, 24/7 monitoring. Zmanjšajte izgube in optimizirajte stroške.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Odpri meni">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Domov</a>
+                    <a href="gospodinjstva.html" class="nav-link">Gospodinjstva</a>
+                    <a href="industrija.html" class="nav-link active">Industrija</a>
+                    <a href="index.html#about" class="nav-link">O nas</a>
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Pametna rešitev za upravljanje vodnih omrežij</h1>
+                    <p class="hero-subtitle">Celovit sistem za vodovode, industrijo in večstanovanjske objekte.
+                        Zmanjšajte izgube, optimizirajte stroške, zagotovite neprekinjeno oskrbo.</p>
+                    <div class="hero-actions">
+                        <a href="#products" class="btn-primary">Naše rešitve</a>
+                        <a href="#advantages" class="btn-secondary">Tehnične prednosti</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Advantages Section -->
+        <section id="advantages" class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Zakaj ARSS rešitve?</h2>
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th class="feature-col">Funkcionalnost</th>
+                                <th class="traditional-col">
+                                    <div class="col-header">
+                                        <span class="col-icon">📋</span>
+                                        <span>Tradicionalni sistemi</span>
+                                    </div>
+                                </th>
+                                <th class="arss-col">
+                                    <div class="col-header">
+                                        <span class="col-icon">⚡</span>
+                                        <span>ARSS Pametni sistem</span>
+                                    </div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="feature-name" data-label="Funkcionalnost">
+                                    <span class="feature-icon">📊</span>
+                                    Odčitavanje stanja
+                                </td>
+                                <td class="traditional-value" data-label="Tradicionalni sistemi">
+                                    <span class="value-badge traditional">Ročno (enkrat letno)</span>
+                                </td>
+                                <td class="arss-value" data-label="ARSS Pametni sistem">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Avtomatsko (vsako uro)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name" data-label="Funkcionalnost">
+                                    <span class="feature-icon">💧</span>
+                                    Zaznavanje puščanja
+                                </td>
+                                <td class="traditional-value" data-label="Tradicionalni sistemi">
+                                    <span class="value-badge traditional">Ob prejemu položnice</span>
+                                </td>
+                                <td class="arss-value" data-label="ARSS Pametni sistem">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Takojšnje opozorilo</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name" data-label="Funkcionalnost">
+                                    <span class="feature-icon">🎯</span>
+                                    Natančnost merjenja
+                                </td>
+                                <td class="traditional-value" data-label="Tradicionalni sistemi">
+                                    <span class="value-badge traditional">Nizka (mehanski deli)</span>
+                                </td>
+                                <td class="arss-value" data-label="ARSS Pametni sistem">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Visoka (ultrazvočno)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name" data-label="Funkcionalnost">
+                                    <span class="feature-icon">📈</span>
+                                    Analitika porabe
+                                </td>
+                                <td class="traditional-value" data-label="Tradicionalni sistemi">
+                                    <span class="value-badge traditional">Ni na voljo</span>
+                                </td>
+                                <td class="arss-value" data-label="ARSS Pametni sistem">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Napredna analitika v AURA</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="feature-name" data-label="Funkcionalnost">
+                                    <span class="feature-icon">🔧</span>
+                                    Vzdrževanje
+                                </td>
+                                <td class="traditional-value" data-label="Tradicionalni sistemi">
+                                    <span class="value-badge traditional">Visoki stroški</span>
+                                </td>
+                                <td class="arss-value" data-label="ARSS Pametni sistem">
+                                    <span class="check-mark">✓</span>
+                                    <span class="value-badge arss">Brez gibljivih delov</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="section bg-dark text-white">
+            <div class="container">
+                <h2 class="section-title text-center text-white">Naše rešitve</h2>
+                <div class="cards-grid" style="margin-top: 3rem;">
+                    <!-- Metering Card -->
+                    <div class="card glass-card">
+                        <div class="card-icon">💧</div>
+                        <h3>Pametni vodomeri</h3>
+                        <p>Ultrazvočni vodomeri iPerl, MeiTwin, Cordonel in ElectoSonic za najvišjo natančnost in
+                            zanesljivost.</p>
+                        <ul class="card-list">
+                            <li>Zaznavanje puščanja v realnem času</li>
+                            <li>Opozorila za zmrzal in povratni tok</li>
+                            <li>Brez gibljivih delov - dolga življenjska doba</li>
+                            <li>Različni premeri (DN15 - DN300)</li>
+                        </ul>
+                        <a href="merjenje.html" class="btn-secondary"
+                            style="margin-top: 1rem; display: inline-block;">Tehnične
+                            specifikacije →</a>
+                    </div>
+                    <!-- Communication Card -->
+                    <div class="card glass-card">
+                        <div class="card-icon">📡</div>
+                        <h3>Komunikacija</h3>
+                        <p>Fleksibilne rešitve za prenos podatkov - od LoRaWAN do NB-IoT. Prilagojene vaši
+                            infrastrukturi.</p>
+                        <ul class="card-list">
+                            <li>LoRaWAN (dolg doseg, nizka poraba)</li>
+                            <li>NB-IoT (mobilno omrežje)</li>
+                            <li>Koncentratorji za večje objekte</li>
+                            <li>Redundantne povezave</li>
+                        </ul>
+                        <a href="komunikacija.html" class="btn-secondary"
+                            style="margin-top: 1rem; display: inline-block;">Več o
+                            komunikaciji →</a>
+                    </div>
+                    <!-- Software Card -->
+                    <div class="card glass-card">
+                        <div class="card-icon">
+                            <img src="https://arss.si/wp-content/uploads/2018/11/Aura-140x300.png" alt="AURA"
+                                style="height: 60px; object-fit: contain;">
+                        </div>
+                        <h3>AURA Platforma</h3>
+                        <p>Napredna programska platforma za analitiko, upravljanje alarmov in nadzor celotnega omrežja.
+                        </p>
+                        <ul class="card-list">
+                            <li>Spletni portal 24/7</li>
+                            <li>Napredna analitika in poročila</li>
+                            <li>Upravljanje alarmov</li>
+                            <li>API za integracijo</li>
+                        </ul>
+                        <a href="programska-oprema.html" class="btn-secondary"
+                            style="margin-top: 1rem; display: inline-block;">Oglejte si
+                            AURA →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integration Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Enostavna integracija</h2>
+                <div class="grid-2" style="margin-top: 3rem;">
+                    <div class="glass-card">
+                        <div class="card-icon">🔌</div>
+                        <h3>API Povezljivost</h3>
+                        <p>AURA platforma ponuja REST API za povezavo z vašimi
+                            obstoječimi sistemi (ERP, CRM, billing).
+                        </p>
+                        <ul class="card-list">
+                            <li>RESTful API z dokumentacijo</li>
+                            <li>OAuth 2.0 avtentikacija</li>
+                            <li>Webhook obvestila</li>
+                            <li>JSON/XML format</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon">🛠️</div>
+                        <h3>Protokoli in standardi</h3>
+                        <p>Podpiramo vse glavne komunikacijske protokole in industrijske
+                            standarde za brezšivno
+                            integracijo.</p>
+                        <ul class="card-list">
+                            <li>M-Bus (EN 13757)</li>
+                            <li>LoRaWAN 1.0.3</li>
+                            <li>NB-IoT (3GPP)</li>
+                            <li>DLMS/COSEM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Packages Section -->
+        <section id="packages" class="section bg-dark text-white">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title text-white">Paketi za industrijo</h2>
+                    <p class="section-desc" style="color: rgba(255,255,255,0.8);">
+                        Prilagodljive rešitve za vsako
+                        velikost omrežja.</p>
+                </div>
+                <div class="pricing-grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 800px; margin: 0 auto;">
+                    <!-- Gold Package -->
+                    <div class="pricing-card glass-card">
+                        <div class="pricing-header">
+                            <h3 class="package-name">Zlati</h3>
+                            <div class="price">7€ <span class="period">/ mesec /
+                                    točka</span></div>
+                            <p class="package-desc">Za večstanovanjske objekte in manjše
+                                vodovode.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> Pametni vodomeri</li>
+                            <li><span class="check">✓</span> Monitoring 24/7</li>
+                            <li><span class="check">✓</span> Napredna analitika</li>
+                            <li><span class="check">✓</span> Alarmi in opozorila</li>
+                            <li><span class="check">✓</span> AURA platforma</li>
+                            <li><span class="check">✓</span> Tehnična podpora</li>
+                        </ul>
+                        <a href="#contact" class="btn-secondary w-100">Povprašaj</a>
+                    </div>
+
+                    <!-- Diamond Package -->
+                    <div class="pricing-card glass-card popular">
+                        <div class="popular-tag">Priporočeno</div>
+                        <div class="pricing-header">
+                            <h3 class="package-name">Diamantni</h3>
+                            <div class="price">Po meri</div>
+                            <p class="package-desc">Celovita rešitev za velike vodovode
+                                in industrijo.</p>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><span class="check">✓</span> Vse iz Zlatega paketa</li>
+                            <li><span class="check">✓</span> <strong>Prilagojena
+                                    integracija</strong></li>
+                            <li><span class="check">✓</span> <strong>Nadzorni center
+                                    24/7</strong></li>
+                            <li><span class="check">✓</span> Namenski skrbnik računa
+                            </li>
+                            <li><span class="check">✓</span> Prilagojena poročila</li>
+                            <li><span class="check">✓</span> SLA garancija</li>
+                            <li><span class="check">✓</span> On-site podpora</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary w-100">Zahtevaj
+                            ponudbo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title text-center">Naše reference</h2>
+                <div class="grid-2" style="margin-top: 3rem;">
+                    <div class="glass-card">
+                        <h3>🏢 Večstanovanjski objekti</h3>
+                        <p><strong>Problem:</strong> Ročno odčitavanje 200+ stanovanj,
+                            težave s sliko vodomerov, spori
+                            glede porabe.</p>
+                        <p><strong>Rešitev:</strong> Namestitev iPerl vodomerov z NB-IoT
+                            komunikacijo, AURA portal za
+                            upravnika in stanovalce.</p>
+                        <p><strong>Rezultat:</strong></p>
+                        <ul class="card-list">
+                            <li>Prihranek 15 ur/mesec administrativnega dela</li>
+                            <li>90% manj pritožb stanovalcev</li>
+                            <li>Odkritih 12 puščanj v prvem mesecu</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card">
+                        <h3>💧 Komunalni vodovod</h3>
+                        <p><strong>Problem:</strong> Vodne izgube 35%, zastareli
+                            mehanski vodomeri, ročno odčitavanje
+                            5000+ točk.</p>
+                        <p><strong>Rešitev:</strong> Fazna zamenjava z ultrazvočnimi
+                            vodomeri, LoRaWAN omrežje,
+                            centralni nadzorni center.</p>
+                        <p><strong>Rezultat:</strong></p>
+                        <ul class="card-list">
+                            <li>Zmanjšanje izgub na 18% v 2 letih</li>
+                            <li>ROI dosežen v 18 mesecih</li>
+                            <li>Odprava potrebe po terenskem odčitavanju</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Tehnična vprašanja</h2>
+                </div>
+                <div class="faq-container" style="max-width: 900px; margin: 0 auto;">
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Kakšna je natančnost vodomerov?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ultrazvočni vodomeri dosegajo merilno natančnost razreda
+                                R800 (iPerl) oziroma R160
+                                (MeiTwin), kar je bistveno boljše od tradicionalnih
+                                mehanskih vodomerov (R40-R100).
+                                Natančnost se ohranja tudi pri zelo nizkih pretokih.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Kako poteka integracija z obstoječim billingom?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>AURA platforma ponuja REST API za avtomatizirani prenos
+                                podatkov v vaš billing sistem.
+                                Podpiramo tudi ročni export v različnih formatih (CSV,
+                                XML, JSON). Naša tehnična ekipa
+                                vam pomaga pri nastavitvi integracije.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Kako dolgo traja implementacija sistema?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Odvisno od obsega projekta. Za manjše objekte (do 100
+                                točk) 2-4 tedne, za večje
+                                vodovode pa je implementacija fazna in lahko traja več
+                                mesecev. Pilot projekt je
+                                mogoče izvesti v 1 tednu.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item glass-card">
+                        <button class="faq-question">
+                            <span>Ali je potrebna lastna infrastruktura za
+                                komunikacijo?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Odvisno od izbrane tehnologije. NB-IoT uporablja
+                                obstoječe mobilno omrežje (brez
+                                dodatne infrastrukture). LoRaWAN zahteva postavitev
+                                gateway-ev, kar je smiselno za
+                                večje, koncentrirane objekte. Svetujemo vam glede na
+                                vašo situacijo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-dark text-white">
+            <div class="container">
+                <div class="grid-2">
+                    <div>
+                        <h2 class="section-title text-white">Zahtevajte ponudbo</h2>
+                        <p class="mb-4">Stopite v stik z nami za informativni sestanek,
+                            predstavitev sistema ali
+                            konkretno ponudbo za vaš projekt.</p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="label">Naslov:</span>
+                                <span class="value">Gosjakova ulica 3, 8000 Novo
+                                    mesto</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="label">Telefon:</span>
+                                <span class="value"><a href="tel:+38641357480" class="text-white">+386 41 357
+                                        480</a></span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="label">Email:</span>
+                                <span class="value"><a href="mailto:info@arss.si"
+                                        class="text-white">info@arss.si</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-container glass-card">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Kontaktna oseba" aria-label="Kontaktna oseba" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Podjetje / Organizacija"
+                                    aria-label="Podjetje / Organizacija" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="E-pošta" aria-label="E-pošta" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Telefon" aria-label="Telefon">
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Opišite vaše potrebe in obseg projekta" rows="3"
+                                    aria-label="Opis projekta" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary w-100">Pošlji
+                                povpraševanje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <p>&copy; 2025 ARSS d.o.o. Vse pravice pridržane.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./analytics-config.js"></script>
+    <script src="./form-config.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

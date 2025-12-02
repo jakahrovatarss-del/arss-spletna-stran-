@@ -894,78 +894,7 @@ h3 {
 
 .form-message-error {
   background: rgba(239, 68, 68, 0.1);
-  color: #dc2626;
-  border: 2px solid rgba(239, 68, 68, 0.3);
-}
 
-/* Responsive */
-@media (max-width: 968px) {
-  h1 {
-    font-size: 2.8rem;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  .grid-2 {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .nav-links {
-    display: none;
-    position: absolute;
-    top: var(--header-height);
-    left: 0;
-    width: 100%;
-    background: white;
-    flex-direction: column;
-    padding: 2rem;
-    box-shadow: var(--shadow-md);
-    z-index: 999;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-link {
-    color: var(--primary);
-  }
-
-  .mobile-menu-btn {
-    display: flex;
-  }
-
-  .pricing-card.popular {
-    transform: none;
-  }
-
-  .comparison-table th,
-  .comparison-table td {
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-
-  .feature-icon {
-    font-size: 1.2rem;
-  }
-
-  .col-icon {
-    font-size: 1.5rem;
-  }
-
-  .value-badge {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.8rem;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  *,
-  *::before,
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
