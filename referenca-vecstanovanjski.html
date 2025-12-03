@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reference: Večstanovanjski objekti - ARSS</title>
+    <meta name="description"
+        content="Študija primera: Kako je pametno merjenje rešilo težave z odčitavanjem in puščanjem v večstanovanjskem objektu.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Odpri meni">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Domov</a>
+                    <a href="gospodinjstva.html" class="nav-link">Gospodinjstva</a>
+                    <a href="industrija.html" class="nav-link active">Industrija</a>
+                    <a href="index.html#about" class="nav-link">O nas</a>
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" style="min-height: 60vh;">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="text-accent"
+                        style="font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; display: block;">Študija
+                        primera</span>
+                    <h1 class="hero-title">Pametno upravljanje večstanovanjskih objektov</h1>
+                    <p class="hero-subtitle">Kako smo rešili težave z ročnim odčitavanjem 200+ stanovanj in odpravili
+                        spore glede porabe.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap: 4rem;">
+                    <div>
+                        <h2 class="section-title">Izziv</h2>
+                        <p class="lead">Upravnik večjega stanovanjskega kompleksa v Ljubljani se je soočal z
+                            naraščajočim nezadovoljstvom stanovalcev in visokimi administrativnimi stroški.</p>
+
+                        <div class="glass-card" style="margin: 2rem 0;">
+                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Ključni problemi:</h3>
+                            <ul class="card-list">
+                                <li><strong>Ročno odčitavanje:</strong> Popisovanje 200+ vodomerov je vzelo več dni dela
+                                    vsak mesec.</li>
+                                <li><strong>Nedostopnost:</strong> Številni stanovalci niso bili doma v času popisa, kar
+                                    je vodilo do pavšalnih obračunov.</li>
+                                <li><strong>Spori:</strong> Stanovalci so se pritoževali nad netočnimi računi in
+                                    nepojasnjenimi razlikami med glavnim in individualnimi vodomeri.</li>
+                                <li><strong>Neopažena puščanja:</strong> Voda je pogosto iztekala v praznih stanovanjih,
+                                    kar je povzročalo škodo na objektu.</li>
+                            </ul>
+                        </div>
+
+                        <h2 class="section-title">Rešitev ARSS</h2>
+                        <p>Implementirali smo celovito rešitev, ki temelji na avtomatizaciji in transparentnosti.</p>
+                        <p>Namestili smo pametne ultrazvočne vodomere <strong>iPerl</strong>, opremljene s
+                            komunikacijskimi moduli <strong>NB-IoT</strong>. Ta tehnologija omogoča zanesljiv prenos
+                            podatkov iz jaškov in kleti brez potrebe po dragi dodatni infrastrukturi (gateway-ih).</p>
+                        <p>Vsi podatki se zbirajo v platformi <strong>AURA</strong>, do katere imajo dostop tako
+                            upravnik (za celoten objekt) kot stanovalci (za svoje stanovanje).</p>
+                    </div>
+
+                    <div>
+                        <div class="glass-card bg-dark text-white">
+                            <h3 class="text-white">Rezultati v številkah</h3>
+                            <div class="stats-grid" style="display: grid; gap: 2rem; margin-top: 2rem;">
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">15h</div>
+                                    <p>Prihranek administrativnega dela na mesec</p>
+                                </div>
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">90%</div>
+                                    <p>Manj pritožb stanovalcev</p>
+                                </div>
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">12</div>
+                                    <p>Odkritih puščanj v prvem mesecu</p>
+                                </div>
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">100%</div>
+                                    <p>Uspešnost daljinskega odčitavanja</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 3rem;">
+                            <h3>Zgodba iz prakse: Preprečena katastrofa</h3>
+                            <p>V enem od stanovanj, ki je bilo dlje časa prazno, je prišlo do tihega puščanja na WC
+                                kotličku. V klasičnem sistemu bi to opazili šele ob letnem poračunu ali ko bi voda
+                                pronicala k sosedom.</p>
+                            <p>Sistem AURA je zaznal <strong>konstanten pretok 15 litrov na uro</strong> in takoj poslal
+                                opozorilo upravniku. Intervencija je bila opravljena v 24 urah. Ocenjen prihranek vode
+                                in preprečene škode na objektu je presegel <strong>2.000 €</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 4rem;">
+                    <h2 class="section-title">Želite podobne rezultate?</h2>
+                    <p class="mb-4">Kontaktirajte nas za brezplačen ogled vašega objekta.</p>
+                    <a href="industrija.html#contact" class="btn-primary">Zahtevajte ponudbo</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <p>&copy; 2025 ARSS d.o.o. Vse pravice pridržane.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

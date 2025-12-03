@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reference: Komunalni vodovod - ARSS</title>
+    <meta name="description"
+        content="Študija primera: Digitalna preobrazba komunalnega vodovoda, zmanjšanje vodnih izgub in optimizacija stroškov.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                </a>
+                <button class="mobile-menu-btn" aria-label="Odpri meni">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav class="nav-links">
+                    <a href="index.html" class="nav-link">Domov</a>
+                    <a href="gospodinjstva.html" class="nav-link">Gospodinjstva</a>
+                    <a href="industrija.html" class="nav-link active">Industrija</a>
+                    <a href="index.html#about" class="nav-link">O nas</a>
+                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" style="min-height: 60vh;">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="text-accent"
+                        style="font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem; display: block;">Študija
+                        primera</span>
+                    <h1 class="hero-title">Digitalna preobrazba komunalnega vodovoda</h1>
+                    <p class="hero-subtitle">Kako smo zmanjšali vodne izgube za 50% in optimizirali delo terenskih ekip.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="section">
+            <div class="container">
+                <div class="grid-2" style="gap: 4rem;">
+                    <div>
+                        <h2 class="section-title">Izziv</h2>
+                        <p class="lead">Srednje veliko komunalno podjetje se je soočalo z nevzdržnimi vodnimi izgubami
+                            in zastarelim načinom dela.</p>
+
+                        <div class="glass-card" style="margin: 2rem 0;">
+                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Ključni problemi:</h3>
+                            <ul class="card-list">
+                                <li><strong>Visoke vodne izgube:</strong> Kar 35% načrpane vode se je izgubilo v omrežju
+                                    zaradi neodkritih puščanj.</li>
+                                <li><strong>Stroški dela:</strong> Ročno popisovanje 5.000+ odjemnih mest je zahtevalo
+                                    ogromno časa in potnih stroškov.</li>
+                                <li><strong>Reaktivno vzdrževanje:</strong> Okvare so se popravljale šele, ko je voda že
+                                    udarila na površje, kar je povzročalo veliko škodo na infrastrukturi.</li>
+                                <li><strong>Netočni podatki:</strong> Mehanski vodomeri so pri nizkih pretokih
+                                    izgubljali natančnost, kar je pomenilo izpad prihodkov.</li>
+                            </ul>
+                        </div>
+
+                        <h2 class="section-title">Rešitev ARSS</h2>
+                        <p>Izvedli smo fazno prenovo celotnega sistema merjenja in nadzora.</p>
+                        <p>Vzpostavili smo <strong>LoRaWAN omrežje</strong> za pokrivanje celotnega območja občine. To
+                            je omogočilo namestitev pametnih vodomerov tudi na težko dostopnih lokacijah brez potrebe po
+                            mobilnem signalu na vsaki točki.</p>
+                        <p>Platforma <strong>AURA</strong> je postala centralni nadzorni sistem. Omogočila je:</p>
+                        <ul class="card-list">
+                            <li><strong>Virtualne cone (DMA):</strong> Razdelitev omrežja na manjše cone za hitro
+                                lociranje izgub.</li>
+                            <li><strong>Bilanciranje v realnem času:</strong> Primerjava načrpane in prodane vode vsako
+                                uro.</li>
+                            <li><strong>Digitalni delovni nalogi:</strong> Terenske ekipe prejemajo naloge direktno na
+                                tablice.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div class="glass-card bg-dark text-white">
+                            <h3 class="text-white">Rezultati po 2 letih</h3>
+                            <div class="stats-grid" style="display: grid; gap: 2rem; margin-top: 2rem;">
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">18%</div>
+                                    <p>Zmanjšanje vodnih izgub (iz 35%)</p>
+                                </div>
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">18 mes</div>
+                                    <p>Povrnitev investicije (ROI)</p>
+                                </div>
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">0</div>
+                                    <p>Potrebnih terenskih popisov</p>
+                                </div>
+                                <div>
+                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">80%</div>
+                                    <p>Manj administrativnega dela</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin-top: 3rem;">
+                            <h3>Operativna učinkovitost</h3>
+                            <p>Z uvedbo digitalnih delovnih nalogov in avtomatskega prenosa podatkov v billing sistem
+                                smo drastično zmanjšali možnost človeških napak.</p>
+                            <p><i>"AURA nam je omogočila prehod iz 'gašenja požarov' v proaktivno upravljanje. Zdaj vemo
+                                    za okvaro, še preden nas pokličejo občani."</i> - Tehnični direktor komunale</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 4rem;">
+                    <h2 class="section-title">Optimizirajte vaše omrežje</h2>
+                    <p class="mb-4">Dogovorite se za predstavitev sistema AURA.</p>
+                    <a href="industrija.html#contact" class="btn-primary">Kontaktirajte nas</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container text-center">
+                <p>&copy; 2025 ARSS d.o.o. Vse pravice pridržane.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

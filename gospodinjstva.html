@@ -58,7 +58,7 @@
         <section class="section">
             <div class="container">
                 <h2 class="section-title text-center">Zakaj pametni vodomer?</h2>
-                <div class="grid-3" style="margin-top: 3rem;">
+                <div class="cards-grid" style="margin-top: 3rem;">
                     <div class="glass-card text-center">
                         <div class="card-icon" style="font-size: 3rem;">⚠️</div>
                         <h3>Problem</h3>
@@ -85,7 +85,7 @@
         <section id="how-it-works" class="section">
             <div class="container">
                 <h2 class="section-title text-center">Kako deluje v 3 korakih</h2>
-                <div class="grid-3" style="margin-top: 3rem;">
+                <div class="cards-grid" style="margin-top: 3rem;">
                     <div class="glass-card">
                         <div class="card-icon" style="font-size: 3rem;">🔧</div>
                         <h3>1. Namestitev</h3>
@@ -275,6 +275,13 @@
                             </div>
                             <div class="form-group">
                                 <textarea placeholder="Sporočilo (opcijsko)" rows="3" aria-label="Sporočilo"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="meter-image" class="file-upload-label">
+                                    📷 Slika vodometra ali dokument (PDF/Slika)
+                                </label>
+                                <input type="file" id="meter-image" name="meter-image" accept="image/*,application/pdf"
+                                    aria-label="Slika vodometra ali dokument" class="file-upload-input">
                             </div>
                             <button type="submit" class="btn-primary w-100">Pošlji povpraševanje</button>
                         </form>
