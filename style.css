@@ -352,22 +352,7 @@ h3 {
   margin-bottom: 2rem !important;
 }
 
-.w-100 {
-  width: 100%;
-}
-
-/* Grid Layouts */
-.grid-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3rem;
-  align-items: start;
-}
-
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+gap: 2rem;
 }
 
 /* Glass Card */
@@ -566,31 +551,6 @@ h3 {
 
 /* Pricing Section */
 .section-header {
-  margin-bottom: 3rem;
-}
-
-.section-desc {
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.pricing-card {
-  background: white;
-  border-radius: var(--radius-lg);
-  padding: 2rem;
-  box-shadow: var(--shadow-md);
-  transition: var(--transition);
-  border: 2px solid transparent;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   overflow: hidden;
 }
 
@@ -906,6 +866,7 @@ h3 {
 .timeline-item p {
   color: var(--primary) !important;
 }
+
 /* Dropdown Menu */
 .dropdown {
   position: relative;
@@ -917,7 +878,7 @@ h3 {
   position: absolute;
   background-color: white;
   min-width: 220px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1002;
   border-radius: var(--radius-sm);
   padding: 0.5rem 0;
@@ -951,12 +912,13 @@ h3 {
   .dropdown-content {
     position: static;
     box-shadow: none;
-    background: rgba(0,0,0,0.02);
+    background: rgba(0, 0, 0, 0.02);
     margin-left: 1rem;
     min-width: auto;
-    display: none; /* Hidden by default on mobile too */
+    display: none;
+    /* Hidden by default on mobile too */
   }
-  
+
   .dropdown.active .dropdown-content {
     display: block;
   }
@@ -979,7 +941,7 @@ h3 {
     align-items: flex-start;
     padding: 2rem;
     gap: 1rem;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transform: translateY(-150%);
     transition: transform 0.3s ease-in-out;
     max-height: calc(100vh - var(--header-height));
@@ -997,7 +959,8 @@ h3 {
   }
 
   .nav-link::after {
-    display: none; /* Remove underline effect on mobile */
+    display: none;
+    /* Remove underline effect on mobile */
   }
 
   .dropdown {
@@ -1021,10 +984,9 @@ h3 {
     display: block;
     animation: slideDown 0.3s ease-out;
   }
-  
+
   .dropdown-content a {
     padding: 10px 15px;
     font-size: 1rem;
   }
 }
-
