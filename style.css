@@ -5,7 +5,7 @@
   --accent: #0f9ed5;
   --text: #e6f1ff;
   --text-secondary: #8892b0;
-  --header-height: 80px;
+  --header-height: 110px;
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
@@ -93,7 +93,7 @@ h3 {
 }
 
 .logo img {
-  height: 70px;
+  height: 95px;
   object-fit: contain;
 }
 
@@ -107,6 +107,7 @@ h3 {
   text-decoration: none;
   color: var(--primary);
   font-weight: 500;
+  font-size: 1.1rem;
   position: relative;
   transition: var(--transition);
 }
@@ -164,7 +165,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  padding: 4rem 0;
+  /* Add padding to prevent edge issues */
   margin-top: var(--header-height);
 }
 
@@ -234,6 +236,8 @@ h3 {
   color: var(--text-secondary);
   margin-bottom: 2rem;
   max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-actions {
@@ -352,7 +356,29 @@ h3 {
   margin-bottom: 2rem !important;
 }
 
-gap: 2rem;
+.w-100 {
+  width: 100%;
+}
+
+/* Grid Layouts */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
 /* Glass Card */
@@ -556,10 +582,11 @@ gap: 2rem;
 
 .pricing-card.popular {
   border: 2px solid var(--accent);
-  transform: scale(1.05);
+  transform: scale(1.02);
   z-index: 1;
   box-shadow: 0 0 30px rgba(15, 158, 213, 0.3);
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.8) 100%);
+  overflow: hidden;
 }
 
 .popular-tag {
@@ -988,5 +1015,64 @@ gap: 2rem;
   .dropdown-content a {
     padding: 10px 15px;
     font-size: 1rem;
+  }
+}
+
+/* Enhanced Hero Image for Gospodinjstva */
+.hero-mockup-large {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+}
+
+/* Enhanced Image Styling */
+.img-enhanced {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.img-enhanced:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.img-fit {
+  object-fit: cover;
+}
+
+/* Card Image Uniformity */
+.card-img-container {
+  width: 100%;
+  height: 250px;
+  /* Fixed height for uniformity */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem 0;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hide grid on hero if needed */
+.hero-no-grid .hero-bg::before {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .pricing-card.popular {
+    transform: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
