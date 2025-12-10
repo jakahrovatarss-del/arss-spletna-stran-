@@ -418,7 +418,8 @@
                         </div>
                     </div>
                     <div class="map-container glass-card">
-                        <form class="contact-form" action="https://formspree.io/f/mgvgnnjl" method="POST">
+                        <form class="contact-form" action="https://formspree.io/f/mgvgnnjl" method="POST"
+                            enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="name">Ime in priimek</label>
                                 <input type="text" id="name" name="name" placeholder="Janez Novak" required>
@@ -428,8 +429,8 @@
                                 <select id="package" name="package" required
                                     style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
                                     <option value="" disabled selected>-- Izberite paket --</option>
-                                    <option value="Srebrni">Srebrni (5€/mesec)</option>
-                                    <option value="Zlati">Zlati (7€/mesec)</option>
+                                    <option value="Srebrni">Srebrni</option>
+                                    <option value="Zlati">Zlati</option>
                                 </select>
                             </div>
                             <div class="form-group">
@@ -440,6 +441,13 @@
                                 <label for="message">Sporočilo</label>
                                 <textarea id="message" name="message" rows="4" placeholder="Vaše sporočilo..."
                                     required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="meter-image" class="file-upload-label">
+                                    📷 Slika vodometra (opcijsko)
+                                </label>
+                                <input type="file" id="meter-image" name="meter-image" accept="image/*"
+                                    class="file-upload-input">
                             </div>
                             <button type="submit" class="btn-primary w-full">Pošlji povpraševanje</button>
                         </form>
