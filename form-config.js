@@ -1,6 +1,6 @@
 // Formspree Configuration
 // Replace 'FORMSPREE_ENDPOINT' with your actual Formspree form endpoint
-const FORMSPREE_ENDPOINT = 'FORMSPREE_ENDPOINT'; // Format: https://formspree.io/f/XXXXXXXX
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mgvgnnjl'; // Updated with correct ID
 
 // Handle form submission
 document.addEventListener('DOMContentLoaded', () => {
