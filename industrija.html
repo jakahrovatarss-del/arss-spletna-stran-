@@ -464,26 +464,30 @@
                     </div>
                     <div class="map-container glass-card">
                         <form class="contact-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Kontaktna oseba" aria-label="Kontaktna oseba" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Podjetje / Organizacija"
-                                    aria-label="Podjetje / Organizacija" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="E-pošta" aria-label="E-pošta" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="tel" placeholder="Telefon" aria-label="Telefon">
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Opišite vaše potrebe in obseg projekta" rows="3"
-                                    aria-label="Opis projekta" required></textarea>
-                            </div>
-                            <button type="submit" class="btn-primary w-100">Pošlji
-                                povpraševanje</button>
-                        </form>
+                            <form class="contact-form" action="https://formspree.io/f/mqakevdl" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Kontaktna oseba</label>
+                                    <input type="text" id="name" name="name" placeholder="Kontaktna oseba" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="company">Podjetje</label>
+                                    <input type="text" id="company" name="company" placeholder="Ime podjetja" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-poštni naslov</label>
+                                    <input type="email" id="email" name="email" placeholder="info@podjetje.si" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Telefon</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="Telefon">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Sporočilo</label>
+                                    <textarea id="message" name="message" rows="4"
+                                        placeholder="Opišite vaše potrebe in obseg projekta" required></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary w-100">Pošlji povpraševanje</button>
+                            </form>
                     </div>
                 </div>
             </div>

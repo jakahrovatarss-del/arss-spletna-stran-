@@ -418,18 +418,18 @@
                         </div>
                     </div>
                     <div class="map-container glass-card">
-                        <form class="contact-form">
+                        <form class="contact-form" action="https://formspree.io/f/mqakevdl" method="POST">
                             <div class="form-group">
-                                <input type="text" placeholder="Ime in priimek" aria-label="Ime in priimek" required>
+                                <label for="name">Ime in priimek</label>
+                                <input type="text" id="name" name="name" placeholder="Janez Novak" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="Email naslov" aria-label="Email naslov" required>
+                                <label for="email">E-poštni naslov</label>
+                                <input type="email" id="email" name="email" placeholder="janez@primer.si" required>
                             </div>
                             <div class="form-group">
-                                <input type="tel" placeholder="Telefonska številka" aria-label="Telefonska številka">
-                            </div>
-                            <div class="form-group">
-                                <textarea rows="4" placeholder="Vaše sporočilo" aria-label="Vaše sporočilo"
+                                <label for="message">Sporočilo</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Vaše sporočilo..."
                                     required></textarea>
                             </div>
                             <div class="form-group">
