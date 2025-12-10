@@ -1,6 +1,6 @@
 // Google Analytics Configuration
 // Replace 'GA_MEASUREMENT_ID' with your actual Google Analytics Measurement ID
-const GA_MEASUREMENT_ID = 'GA_MEASUREMENT_ID'; // Format: G-XXXXXXXXXX
+const GA_MEASUREMENT_ID = 'GA_MEASUREMENT_ID'; // Format: G-7EJYRWMP87
 
 // Initialize Google Analytics
 window.dataLayer = window.dataLayer || [];
