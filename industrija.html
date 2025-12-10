@@ -464,7 +464,7 @@
                     </div>
                     <div class="map-container glass-card">
                         <form class="contact-form">
-                            <form class="contact-form" action="https://formspree.io/f/mqakevdl" method="POST">
+                            <form class="contact-form" action="https://formspree.io/f/mgvgnnjl" method="POST">
                                 <div class="form-group">
                                     <label for="name">Kontaktna oseba</label>
                                     <input type="text" id="name" name="name" placeholder="Kontaktna oseba" required>
@@ -472,6 +472,15 @@
                                 <div class="form-group">
                                     <label for="company">Podjetje</label>
                                     <input type="text" id="company" name="company" placeholder="Ime podjetja" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="package">Izberite paket</label>
+                                    <select id="package" name="package" required
+                                        style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
+                                        <option value="" disabled selected>-- Izberite paket --</option>
+                                        <option value="Zlati">Zlati (Za manjše vodovode)</option>
+                                        <option value="Diamantni">Diamantni (Po meri)</option>
+                                    </select>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">E-poštni naslov</label>
@@ -486,7 +495,7 @@
                                     <textarea id="message" name="message" rows="4"
                                         placeholder="Opišite vaše potrebe in obseg projekta" required></textarea>
                                 </div>
-                                <button type="submit" class="btn-primary w-100">Pošlji povpraševanje</button>
+                                <button type="submit" class="btn-primary w-full">Pošlji povpraševanje</button>
                             </form>
                     </div>
                 </div>

@@ -264,25 +264,22 @@
                     </div>
                     <div class="map-container glass-card">
                         <form class="contact-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="Ime in priimek" aria-label="Ime in priimek" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" placeholder="E-poštni naslov" aria-label="E-poštni naslov" required>
-                            </div>
-                            <div class="form-group">
-                                <textarea placeholder="Vaše sporočilo" rows="4" aria-label="Vaše sporočilo"
-                                    required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="meter-image" class="file-upload-label">
-                                    📷 Slika vodometra (opcijsko)
-                                </label>
-                                <input type="file" id="meter-image" name="meter-image" accept="image/*"
-                                    aria-label="Slika vodometra" class="file-upload-input">
-                            </div>
-                            <button type="submit" class="btn-primary w-100">Pošlji sporočilo</button>
-                        </form>
+                            <form class="contact-form" action="https://formspree.io/f/mgvgnnjl" method="POST">
+                                <div class="form-group">
+                                    <label for="name">Ime in priimek</label>
+                                    <input type="text" id="name" name="name" placeholder="Janez Novak" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-poštni naslov</label>
+                                    <input type="email" id="email" name="email" placeholder="janez@primer.si" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Sporočilo</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Vaše sporočilo..."
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn-primary w-full">Pošlji sporočilo</button>
+                            </form>
                     </div>
                 </div>
             </div>

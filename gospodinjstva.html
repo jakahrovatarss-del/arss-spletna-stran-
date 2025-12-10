@@ -418,10 +418,19 @@
                         </div>
                     </div>
                     <div class="map-container glass-card">
-                        <form class="contact-form" action="https://formspree.io/f/mqakevdl" method="POST">
+                        <form class="contact-form" action="https://formspree.io/f/mgvgnnjl" method="POST">
                             <div class="form-group">
                                 <label for="name">Ime in priimek</label>
                                 <input type="text" id="name" name="name" placeholder="Janez Novak" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="package">Izberite paket</label>
+                                <select id="package" name="package" required
+                                    style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
+                                    <option value="" disabled selected>-- Izberite paket --</option>
+                                    <option value="Srebrni">Srebrni (5€/mesec)</option>
+                                    <option value="Zlati">Zlati (7€/mesec)</option>
+                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="email">E-poštni naslov</label>
@@ -432,13 +441,7 @@
                                 <textarea id="message" name="message" rows="4" placeholder="Vaše sporočilo..."
                                     required></textarea>
                             </div>
-                            <div class="form-group">
-                                <label for="pdf-upload" class="file-upload-label">Imate obstoječ račun? Naložite ga za
-                                    analizo (PDF)</label>
-                                <input type="file" id="pdf-upload" name="pdf-upload" accept=".pdf"
-                                    class="file-upload-input">
-                            </div>
-                            <button type="submit" class="btn-primary w-100">Pošlji povpraševanje</button>
+                            <button type="submit" class="btn-primary w-full">Pošlji povpraševanje</button>
                         </form>
                     </div>
                 </div>
