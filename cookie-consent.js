@@ -20,35 +20,36 @@
     const GA_ID = 'G-7EJYRWMP87';
     const CONSENT_KEY = 'arss_cookie_consent';
 
-    // 4. Helper to load the Google Tag Script
-    function loadGoogleTag() {
-        // Correctly update consent to granted before loading script
+    // 4. Load Google Tag Script Immediately (Advanced Consent Mode)
+    // This ensures the tag is "found" by Tag Assistant, but respects the 'denied' state above.
+    if (!document.querySelector(`script[src*="${GA_ID}"]`)) {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        document.head.appendChild(script);
+
+        gtag('js', new Date());
+        gtag('config', GA_ID);
+    }
+
+    // 5. Update Consent function
+    function grantConsent() {
         gtag('consent', 'update', {
             'ad_storage': 'granted',
             'ad_user_data': 'granted',
             'ad_personalization': 'granted',
             'analytics_storage': 'granted'
         });
-
-        // Load the script if not already present
-        if (!document.querySelector(`script[src*="${GA_ID}"]`)) {
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-            document.head.appendChild(script);
-
-            gtag('js', new Date());
-            gtag('config', GA_ID);
-            console.log('Google Analytics loaded (Consent Granted)');
-        }
+        localStorage.setItem(CONSENT_KEY, 'granted');
+        console.log('Consent granted.');
     }
 
-    // 5. Check LocalStorage on page load
+    // 6. Check LocalStorage on page load
     const storedConsent = localStorage.getItem(CONSENT_KEY);
 
     if (storedConsent === 'granted') {
-        // User previously granted consent -> Load immediately
-        loadGoogleTag();
+        // User previously granted consent -> Update consent state
+        grantConsent();
     } else if (storedConsent === 'denied') {
         // User previously denied -> Do nothing (defaults are already 'denied')
         console.log('Cookies denied by user preference.');
@@ -57,7 +58,7 @@
         window.addEventListener('DOMContentLoaded', showCookieBanner);
     }
 
-    // 6. Create and Show Banner
+    // 7. Create and Show Banner
     function showCookieBanner() {
         // Create banner element
         const banner = document.createElement('div');
@@ -82,8 +83,7 @@
 
         // Add Event Listeners
         document.getElementById('btn-accept').addEventListener('click', () => {
-            localStorage.setItem(CONSENT_KEY, 'granted');
-            loadGoogleTag();
+            grantConsent(); // Updates 'consent' state
             hideBanner();
         });
 
