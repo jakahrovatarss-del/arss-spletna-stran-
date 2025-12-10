@@ -7,15 +7,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (fileInput) {
         const fileLabel = document.querySelector('label[for="meter-image"]');
         if (fileLabel) {
-            const originalLabelText = fileLabel.innerHTML;
+            const originalLabelText = fileLabel.textContent;
 
             fileInput.addEventListener('change', (e) => {
                 if (e.target.files && e.target.files.length > 0) {
-                    const fileName = e.target.files[0].name;
-                    fileLabel.innerHTML = `✅ Datoteka izbrana: <strong>${fileName}</strong>`;
+                    // Sanitize filename to prevent XSS
+                    const fileName = e.target.files[0].name.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+                    fileLabel.textContent = `✅ Datoteka izbrana: ${fileName}`;
                     fileLabel.style.color = '#10b981';
                 } else {
-                    fileLabel.innerHTML = originalLabelText;
+                    fileLabel.textContent = originalLabelText;
                     fileLabel.style.color = '';
                 }
             });
