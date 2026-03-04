@@ -175,4 +175,24 @@ arss-website/
 
 ---
 
+## 🔒 Varnostni headerji (Lighthouse / Best Practices)
+
+Lighthouse priporoča naslednje HTTP headerje, ki jih **GitHub Pages ne omogoča** nastaviti neposredno:
+
+| Header | Namen | Status |
+|--------|-------|--------|
+| **Content-Security-Policy (CSP)** | Zmanjšanje tveganja XSS | ⚠️ Manjka – nastaviti ob premiku na drugo gostovanje |
+| **Strict-Transport-Security (HSTS)** | Izključitev HTTP, varnost povezav | ⚠️ Manjka – nastaviti ob premiku |
+| **Cross-Origin-Opener-Policy (COOP)** | Izolacija izvora | ⚠️ Manjka |
+| **X-Frame-Options** / **frame-ancestors** | Zaščita pred clickjackingom | ⚠️ Manjka |
+
+### Možnosti za v prihodnje
+
+- **Netlify, Vercel, Cloudflare Pages:** podpora za custom headerje (npr. `_headers`, `netlify.toml`).
+- **GitHub Pages + custom domain + CDN:** headerje nastaviti v proxy/CDN (npr. Cloudflare).
+
+Dokumentirajte te nastavitve, ko boste menjali hosting.
+
+---
+
 *Zadnja posodobitev: 2025-12-11*

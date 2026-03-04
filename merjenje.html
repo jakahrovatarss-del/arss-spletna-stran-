@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- Cookie Consent & Analytics -->
-    <script src="./cookie-consent.js"></script>
+    <!-- Cookie Consent loaded at end of body -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pametni vodomeri - ARSS</title>
@@ -24,8 +23,9 @@
         <!-- Navigation -->
         <header class="header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                <a href="index.html" class="logo" title="ARSS - Domov">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo" width="86"
+                        height="95">
                 </a>
                 <button class="mobile-menu-btn" aria-label="Odpri meni">
                     <span class="bar"></span>
@@ -33,35 +33,36 @@
                     <span class="bar"></span>
                 </button>
                 <nav class="nav-links">
-                    <a href="index.html" class="nav-link">Domov</a>
+                    <a href="index.html" class="nav-link" title="Domov">Domov</a>
 
                     <div class="dropdown">
-                        <a href="gospodinjstva.html" class="nav-link">Gospodinjstva ▾</a>
+                        <a href="gospodinjstva.html" class="nav-link" title="Za gospodinjstva - pametni vodomeri">Gospodinjstva ▾</a>
                         <div class="dropdown-content">
-                            <a href="gospodinjstva.html#features">Prednosti</a>
-                            <a href="gospodinjstva.html#how-it-works">Kako deluje</a>
-                            <a href="gospodinjstva.html#packages">Paketi</a>
-                            <a href="gospodinjstva.html#faq">Pogosta vprašanja</a>
+                            <a href="gospodinjstva.html#features" title="Prednosti za gospodinjstva">Prednosti</a>
+                            <a href="gospodinjstva.html#how-it-works" title="Kako deluje - gospodinjstva">Kako deluje</a>
+                            <a href="gospodinjstva.html#packages" title="Paketi za gospodinjstva">Paketi</a>
+                            <a href="gospodinjstva.html#faq" title="Pogosta vprašanja - gospodinjstva">Pogosta vprašanja</a>
                         </div>
                     </div>
 
                     <div class="dropdown">
-                        <a href="industrija.html" class="nav-link active">Industrija ▾</a>
+                        <a href="industrija.html" class="nav-link active" title="Za industrijo in vodovode">Industrija ▾</a>
                         <div class="dropdown-content">
-                            <a href="merjenje.html">Pametni vodomeri</a>
-                            <a href="komunikacija.html">Komunikacija</a>
-                            <a href="programska-oprema.html">AURA Platforma</a>
-                            <a href="industrija.html#references">Reference</a>
-                            <a href="industrija.html#packages">Paketi</a>
+                            <a href="merjenje.html" title="Pametni vodomeri">Pametni vodomeri</a>
+                            <a href="komunikacija.html" title="Komunikacijske rešitve">Komunikacija</a>
+                            <a href="programska-oprema.html" title="AURA Platforma">AURA Platforma</a>
+                            <a href="industrija.html#references" title="Reference">Reference</a>
+                            <a href="industrija.html#packages" title="Paketi za industrijo">Paketi</a>
                         </div>
                     </div>
 
-                    <a href="index.html#about" class="nav-link">O nas</a>
-                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                    <a href="index.html#about" class="nav-link" title="Pojdi na sekcijo O nas">O nas</a>
+                    <a href="index.html#contact" class="nav-link" title="Pojdi na kontaktni obrazec">Kontakt</a>
                 </nav>
             </div>
         </header>
 
+        <main>
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-bg"></div>
@@ -71,8 +72,8 @@
                     <p class="hero-subtitle">Napredni ultrazvočni vodomeri za natančno merjenje, zaznavanje puščanja in
                         optimizacijo porabe vode.</p>
                     <div class="hero-actions">
-                        <a href="#products" class="btn-primary">Naši izdelki</a>
-                        <a href="index.html#contact" class="btn-secondary">Kontakt</a>
+                        <a href="#products" class="btn-primary" title="Naši izdelki - pametni vodomeri">Naši izdelki</a>
+                        <a href="index.html#contact" class="btn-secondary" title="Kontakt">Kontakt</a>
                     </div>
                 </div>
             </div>
@@ -87,12 +88,12 @@
                     Pooblaščeni distributer</p>
                 <div style="display: flex; justify-content: center; align-items: center; gap: 4rem; flex-wrap: wrap;">
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-                        <img src="./images/sensus-logo.png" alt="Sensus Logo"
+                        <img src="./images/sensus-logo.webp" alt="Sensus Logo"
                             style="height: 45px; filter: brightness(0) invert(0.3);">
                         <span style="font-size: 0.75rem; color: var(--text-secondary);">Sensus vodomeri</span>
                     </div>
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
-                        <img src="./images/maddalena logo.jpg" alt="Maddalena Logo" style="height: 45px;">
+                        <img src="./images/maddalena logo.webp" alt="Maddalena Logo" style="height: 45px;">
                         <span style="font-size: 0.75rem; color: var(--text-secondary);">Maddalena vodomeri</span>
                     </div>
                 </div>
@@ -108,7 +109,7 @@
                     <div class="glass-card">
                         <div
                             style="text-align: center; margin-bottom: 1.5rem; min-height: 180px; display: flex; align-items: center; justify-content: center;">
-                            <img src="./images/electo-sonic-3q (1).png" alt="Electosonic Vodomer"
+                            <img src="./images/electo-sonic-3q (1).webp" alt="Electosonic Vodomer"
                                 style="max-width: 100%; max-height: 180px; height: auto; border-radius: 10px;">
                         </div>
                         <h3 style="color: var(--primary);">Electosonic</h3>
@@ -124,13 +125,13 @@
                         </ul>
                         <a href="https://www.maddalena.it/wp-content/uploads/catalog-pdf/schedatecnica-electosonic-en-v1.pdf"
                             target="_blank" rel="noopener noreferrer" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Tehnični list</a>
+                            style="margin-top: 1rem; display: inline-block;" title="Tehnični list Electosonic (PDF)">Tehnični list</a>
                     </div>
 
                     <!-- iPerl -->
                     <div class="glass-card">
                         <div style="text-align: center; margin-bottom: 1.5rem;">
-                            <img src="./images/smart-meter.png" alt="iPERL Pametni Vodomer"
+                            <img src="./images/smart-meter.webp" alt="iPERL Pametni Vodomer"
                                 style="max-width: 100%; height: auto; border-radius: 10px;">
                         </div>
                         <h3 style="color: var(--primary);">iPERL</h3>
@@ -145,14 +146,14 @@
                         </ul>
                         <a href="https://arss.si/wp-content/uploads/2018/11/EN-iPERL-Intl-Data-Sheet.pdf"
                             target="_blank" rel="noopener noreferrer" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Tehnični
+                            style="margin-top: 1rem; display: inline-block;" title="Tehnični list iPERL (PDF)">Tehnični
                             list</a>
                     </div>
 
                     <!-- MeiTwin -->
                     <div class="glass-card">
                         <div style="text-align: center; margin-bottom: 1.5rem;">
-                            <img src="./images/slika meitwin vodomera.jpg" alt="MeiTwin Vodomer"
+                            <img src="./images/slika meitwin vodomera.webp" alt="MeiTwin Vodomer"
                                 style="max-width: 100%; height: auto; border-radius: 10px;">
                         </div>
                         <h3 style="color: var(--primary);">MeiTwin</h3>
@@ -167,14 +168,14 @@
                         </ul>
                         <a href="https://arss.si/wp-content/uploads/2018/12/EN-MeiTwin-Data-Sheet-1.pdf" target="_blank"
                             rel="noopener noreferrer" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Tehnični
+                            style="margin-top: 1rem; display: inline-block;" title="Tehnični list MeiTwin (PDF)">Tehnični
                             list</a>
                     </div>
 
                     <!-- MeiStream -->
                     <div class="glass-card">
                         <div style="text-align: center; margin-bottom: 1.5rem;">
-                            <img src="./images/slika meistream vodomera.jpg" alt="MeiStream Vodomer"
+                            <img src="./images/slika meistream vodomera.webp" alt="MeiStream Vodomer"
                                 style="max-width: 100%; height: auto; border-radius: 10px;">
                         </div>
                         <h3 style="color: var(--primary);">MeiStream</h3>
@@ -189,14 +190,14 @@
                         </ul>
                         <a href="https://arss.si/wp-content/uploads/2018/11/EN-MeiStream-Data-Sheet-1.pdf"
                             target="_blank" rel="noopener noreferrer" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Tehnični
+                            style="margin-top: 1rem; display: inline-block;" title="Tehnični list MeiStream (PDF)">Tehnični
                             list</a>
                     </div>
 
                     <!-- ResidiaJet -->
                     <div class="glass-card">
                         <div style="text-align: center; margin-bottom: 1.5rem;">
-                            <img src="./images/slika residia jet vodomera.jpg" alt="ResidiaJet Vodomer"
+                            <img src="./images/slika residia jet vodomera.webp" alt="ResidiaJet Vodomer"
                                 style="max-width: 100%; height: auto; border-radius: 10px;">
                         </div>
                         <h3 style="color: var(--primary);">ResidiaJet</h3>
@@ -211,14 +212,14 @@
                         </ul>
                         <a href="https://arss.si/wp-content/uploads/2018/11/EN-ResidiaJet-Data-Sheet-1.pdf"
                             target="_blank" rel="noopener noreferrer" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Tehnični
+                            style="margin-top: 1rem; display: inline-block;" title="Tehnični list ResidiaJet (PDF)">Tehnični
                             list</a>
                     </div>
 
                     <!-- Serija 120-640 -->
                     <div class="glass-card">
                         <div style="text-align: center; margin-bottom: 1.5rem;">
-                            <img src="./images/vodomer-120.jpg" alt="Serija 120/640 Vodomer"
+                            <img src="./images/vodomer-120.webp" alt="Serija 120/640 Vodomer"
                                 style="max-width: 100%; height: auto; border-radius: 10px;">
                         </div>
                         <h3 style="color: var(--primary);">Serija 120 / 640</h3>
@@ -233,14 +234,14 @@
                         </ul>
                         <a href="https://arss.si/wp-content/uploads/2018/11/EN-120-Data-Sheet.pdf" target="_blank"
                             rel="noopener noreferrer" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Tehnični
+                            style="margin-top: 1rem; display: inline-block;" title="Tehnični list Serija 120/640 (PDF)">Tehnični
                             list</a>
                     </div>
 
                     <!-- WPV-MS 150 -->
                     <div class="glass-card">
                         <div style="text-align: center; margin-bottom: 1.5rem;">
-                            <img src="./images/wpv-ms 150 slika.jpg" alt="WPV-MS 150 Vodomer"
+                            <img src="./images/wpv-ms 150 slika.webp" alt="WPV-MS 150 Vodomer"
                                 style="max-width: 100%; height: auto; border-radius: 10px;">
                         </div>
                         <h3 style="color: var(--primary);">WPV-MS 150</h3>
@@ -255,7 +256,7 @@
                         </ul>
                         <a href="https://arss.si/wp-content/uploads/2018/12/EN-WPV-MS-Data-Sheet-1.pdf" target="_blank"
                             rel="noopener noreferrer" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Tehnični list</a>
+                            style="margin-top: 1rem; display: inline-block;" title="Tehnični list WPV-MS 150 (PDF)">Tehnični list</a>
                     </div>
 
                 </div>
@@ -271,12 +272,14 @@
                     svetovanje in rešitev po meri vaših potreb.
                 </p>
                 <div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
-                    <a href="index.html#contact" class="btn-primary">Kontaktirajte nas</a>
+                    <a href="index.html#contact" class="btn-primary" title="Stopite v stik z nami">Kontaktirajte nas</a>
                     <a href="komunikacija.html" class="btn-secondary"
-                        style="background: rgba(255,255,255,0.2); color: white;">Komunikacijske rešitve</a>
+                        style="background: rgba(255,255,255,0.2); color: white;" title="Komunikacijske rešitve za vodomere">Komunikacijske rešitve</a>
                 </div>
             </div>
         </section>
+
+        </main>
 
         <footer class="footer">
             <div class="container text-center">
@@ -285,7 +288,8 @@
         </footer>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./cookie-consent.js" defer></script>
+    <script src="./main.js" defer></script>
 </body>
 
 </html>

@@ -5,8 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- Cookie Consent & Analytics -->
-    <script src="./cookie-consent.js"></script>
+    <!-- Cookie Consent loaded at end of body -->
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Programska Oprema - ARSS AURA Platform</title>
@@ -24,8 +23,9 @@
         <!-- Navigation -->
         <header class="header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                <a href="index.html" class="logo" title="ARSS - Domov">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo" width="86"
+                        height="95">
                 </a>
                 <button class="mobile-menu-btn" aria-label="Odpri meni">
                     <span class="bar"></span>
@@ -33,15 +33,16 @@
                     <span class="bar"></span>
                 </button>
                 <nav class="nav-links">
-                    <a href="index.html" class="nav-link">Domov</a>
-                    <a href="gospodinjstva.html" class="nav-link">Gospodinjstva</a>
-                    <a href="industrija.html" class="nav-link">Industrija</a>
-                    <a href="index.html#about" class="nav-link">O nas</a>
-                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                    <a href="index.html" class="nav-link" title="Domov">Domov</a>
+                    <a href="gospodinjstva.html" class="nav-link" title="Za gospodinjstva - pametni vodomeri">Gospodinjstva</a>
+                    <a href="industrija.html" class="nav-link" title="Za industrijo in vodovode">Industrija</a>
+                    <a href="index.html#about" class="nav-link" title="Pojdi na sekcijo O nas">O nas</a>
+                    <a href="index.html#contact" class="nav-link" title="Pojdi na kontaktni obrazec">Kontakt</a>
                 </nav>
             </div>
         </header>
 
+        <main>
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-bg"></div>
@@ -56,9 +57,9 @@
                         vode v realnem času. Dostopna na spletu in mobilnih napravah.</p>
                     <div class="hero-actions">
                         <a href="https://skupnosti.aura-portal.com/" target="_blank" rel="noopener noreferrer"
-                            class="btn-primary">Odpri AURA
+                            class="btn-primary" title="Odpri AURA Portal">Odpri AURA
                             Portal</a>
-                        <a href="index.html#contact" class="btn-secondary">Zahtevaj demo</a>
+                        <a href="index.html#contact" class="btn-secondary" title="Zahtevaj demo AURA">Zahtevaj demo</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +84,7 @@
                     </div>
                     <div class="glass-card">
                         <div style="width: 100%; margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden;">
-                            <img src="./images/app-mockup.png" alt="AURA Aplikacija"
+                            <img src="./images/app-mockup.webp" alt="AURA Aplikacija"
                                 style="width: 100%; height: auto; object-fit: cover;">
                         </div>
                         <h3>Portal na voljo 24/7</h3>
@@ -91,7 +92,7 @@
                             style="margin-top: 1.5rem; padding: 1.5rem; background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%); border-radius: var(--radius-md); color: white; text-align: center;">
                             <p style="font-size: 1.2rem; margin-bottom: 1rem;">🌐 Dostop do portala:</p>
                             <a href="https://skupnosti.aura-portal.com/" target="_blank" rel="noopener noreferrer"
-                                style="color: white; font-weight: 700; font-size: 1.1rem; text-decoration: underline;">skupnosti.aura-portal.com</a>
+                                style="color: white; font-weight: 700; font-size: 1.1rem; text-decoration: underline;" title="Odpri AURA Portal">skupnosti.aura-portal.com</a>
                         </div>
                         <div style="margin-top: 1.5rem;">
                             <h4 style="color: var(--accent); margin-bottom: 1rem;">🎯 Ključne prednosti:</h4>
@@ -117,12 +118,14 @@
                     optimizira vaše upravljanje
                     vode.</p>
                 <div class="hero-actions" style="justify-content: center; margin-top: 2rem;">
-                    <a href="index.html#contact" class="btn-primary">Zahtevaj Demo</a>
+                    <a href="index.html#contact" class="btn-primary" title="Zahtevaj demo AURA">Zahtevaj Demo</a>
                     <a href="merjenje.html" class="btn-secondary"
-                        style="background: rgba(255,255,255,0.2); color: white;">Poglej vodomere</a>
+                        style="background: rgba(255,255,255,0.2); color: white;" title="Poglej pametne vodomere">Poglej vodomere</a>
                 </div>
             </div>
         </section>
+
+        </main>
 
         <!-- Footer -->
         <footer class="footer">
@@ -130,17 +133,18 @@
                 <p>© 2025 ARSS d.o.o. Vse pravice pridržane.</p>
                 <p style="margin-top: 0.5rem;">
                     <a href="https://arss.si" target="_blank" rel="noopener noreferrer"
-                        style="color: var(--accent);">arss.si</a> |
+                        style="color: var(--accent);" title="ARSS spletna stran">arss.si</a> |
                     <a href="https://skupnosti.aura-portal.com/" target="_blank" rel="noopener noreferrer"
-                        style="color: var(--accent); margin-left: 1rem;">AURA Portal</a> |
+                        style="color: var(--accent); margin-left: 1rem;" title="AURA Portal">AURA Portal</a> |
                     <a href="mailto:jakahrovat.arss@gmail.com"
-                        style="color: var(--accent); margin-left: 1rem;">jakahrovat.arss@gmail.com</a>
+                        style="color: var(--accent); margin-left: 1rem;" title="Pošlji email na ARSS">jakahrovat.arss@gmail.com</a>
                 </p>
             </div>
         </footer>
     </div>
 
-    <script type="module" src="/main.js"></script>
+    <script src="./cookie-consent.js" defer></script>
+    <script src="./main.js" defer></script>
 </body>
 
 </html>

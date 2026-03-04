@@ -22,10 +22,14 @@
 
     // 4. Load Google Tag Script Immediately (Advanced Consent Mode)
     // This ensures the tag is "found" by Tag Assistant, but respects the 'denied' state above.
+    // Note: Script may fail to load if blocked by ad blocker (ERR_BLOCKED_BY_CLIENT) - we handle this gracefully.
     if (!document.querySelector(`script[src*="${GA_ID}"]`)) {
         var script = document.createElement('script');
         script.async = true;
         script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+        script.onerror = function () {
+            // Silently handle block (e.g. ad blocker) - no console noise
+        };
         document.head.appendChild(script);
 
         gtag('js', new Date());
@@ -34,12 +38,16 @@
 
     // 5. Update Consent function
     function grantConsent() {
-        gtag('consent', 'update', {
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
-            'analytics_storage': 'granted'
-        });
+        try {
+            gtag('consent', 'update', {
+                'ad_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'analytics_storage': 'granted'
+            });
+        } catch (e) {
+            // gtag may fail if script was blocked (e.g. ad blocker)
+        }
         localStorage.setItem(CONSENT_KEY, 'granted');
         console.log('Consent granted.');
     }

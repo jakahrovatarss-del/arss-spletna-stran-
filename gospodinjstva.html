@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- Cookie Consent & Analytics -->
-    <script src="./cookie-consent.js"></script>
+    <!-- Preload hero background for LCP -->
+    <link rel="preload" as="image" href="./images/app-mockup.webp" fetchpriority="high">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Za gospodinjstva - ARSS Pametno upravljanje vode</title>
@@ -24,8 +24,9 @@
         <!-- Navigation -->
         <header class="header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                <a href="index.html" class="logo" title="ARSS - Domov">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo" width="86"
+                        height="95">
                 </a>
                 <button class="mobile-menu-btn" aria-label="Odpri meni">
                     <span class="bar"></span>
@@ -33,472 +34,497 @@
                     <span class="bar"></span>
                 </button>
                 <nav class="nav-links">
-                    <a href="index.html" class="nav-link">Domov</a>
+                    <a href="index.html" class="nav-link" title="Domov">Domov</a>
 
                     <div class="dropdown">
-                        <a href="gospodinjstva.html" class="nav-link active">Gospodinjstva ▾</a>
+                        <a href="gospodinjstva.html" class="nav-link active"
+                            title="Za gospodinjstva - pametni vodomeri">Gospodinjstva ▾</a>
                         <div class="dropdown-content">
-                            <a href="gospodinjstva.html#features">Prednosti</a>
-                            <a href="gospodinjstva.html#how-it-works">Kako deluje</a>
-                            <a href="gospodinjstva.html#packages">Paketi</a>
-                            <a href="gospodinjstva.html#faq">Pogosta vprašanja</a>
+                            <a href="gospodinjstva.html#features" title="Prednosti za gospodinjstva">Prednosti</a>
+                            <a href="gospodinjstva.html#how-it-works" title="Kako deluje - gospodinjstva">Kako
+                                deluje</a>
+                            <a href="gospodinjstva.html#packages" title="Paketi za gospodinjstva">Paketi</a>
+                            <a href="gospodinjstva.html#faq" title="Pogosta vprašanja - gospodinjstva">Pogosta
+                                vprašanja</a>
                         </div>
                     </div>
 
                     <div class="dropdown">
-                        <a href="industrija.html" class="nav-link">Industrija ▾</a>
+                        <a href="industrija.html" class="nav-link" title="Za industrijo in vodovode">Industrija ▾</a>
                         <div class="dropdown-content">
-                            <a href="merjenje.html">Pametni vodomeri</a>
-                            <a href="komunikacija.html">Komunikacija</a>
-                            <a href="programska-oprema.html">AURA Platforma</a>
-                            <a href="industrija.html#references">Reference</a>
-                            <a href="industrija.html#packages">Paketi</a>
+                            <a href="merjenje.html" title="Pametni vodomeri">Pametni vodomeri</a>
+                            <a href="komunikacija.html" title="Komunikacijske rešitve">Komunikacija</a>
+                            <a href="programska-oprema.html" title="AURA Platforma">AURA Platforma</a>
+                            <a href="industrija.html#references" title="Reference">Reference</a>
+                            <a href="industrija.html#packages" title="Paketi za industrijo">Paketi</a>
                         </div>
                     </div>
 
-                    <a href="index.html#about" class="nav-link">O nas</a>
-                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                    <a href="index.html#about" class="nav-link" title="Pojdi na sekcijo O nas">O nas</a>
+                    <a href="index.html#contact" class="nav-link" title="Pojdi na kontaktni obrazec">Kontakt</a>
                 </nav>
             </div>
         </header>
 
-        <!-- Hero Section -->
-        <!-- Hero Section -->
-        <!-- Hero Section -->
-        <section class="hero hero-no-grid">
-            <div class="hero-bg"
-                style="background: linear-gradient(135deg, rgba(10, 25, 47, 0.7) 0%, rgba(17, 34, 64, 0.8) 100%), url('./images/app-mockup.png') center/cover no-repeat;">
-            </div>
-            <div class="container">
-                <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
-                    <h1 class="hero-title">Prihranite vodo in denar v svojem domu</h1>
-                    <p class="hero-subtitle">Odkrijte puščanje, preden pride račun. Pametni vodomer ARSS vas obvesti
-                        takoj.</p>
-                    <div class="hero-actions" style="justify-content: center;">
-                        <a href="#packages" class="btn-primary">Izberi paket</a>
-                        <a href="#how-it-works" class="btn-secondary">Kako deluje?</a>
+        <main>
+            <!-- Hero Section -->
+            <!-- Hero Section -->
+            <!-- Hero Section -->
+            <section class="hero hero-no-grid">
+                <div class="hero-bg"
+                    style="background: linear-gradient(135deg, rgba(10, 25, 47, 0.7) 0%, rgba(17, 34, 64, 0.8) 100%), url('./images/app-mockup.webp') center/cover no-repeat;">
+                </div>
+                <div class="container">
+                    <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                        <h1 class="hero-title">Prihranite vodo in denar v svojem domu</h1>
+                        <p class="hero-subtitle">Odkrijte puščanje, preden pride račun. Pametni vodomer ARSS vas obvesti
+                            takoj.</p>
+                        <div class="hero-actions" style="justify-content: center;">
+                            <a href="#packages" class="btn-primary" title="Izberi paket za gospodinjstva">Izberi
+                                paket</a>
+                            <a href="#how-it-works" class="btn-secondary" title="Kako deluje pametni vodomer">Kako
+                                deluje?</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Problem/Solution Section -->
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title text-center">Zakaj pametni vodomer?</h2>
-                <div class="cards-grid" style="margin-top: 3rem;">
-                    <div class="glass-card text-center" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="card-icon" style="font-size: 3rem; margin: 0 auto;">⚠️</div>
-                        <h3>Problem</h3>
-                        <div class="card-img-container">
-                            <img src="./images/problem-leak.png" alt="Puščajoča pipa" class="img-enhanced"
-                                loading="lazy">
+            <!-- Problem/Solution Section -->
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title text-center">Zakaj pametni vodomer?</h2>
+                    <div class="cards-grid" style="margin-top: 3rem;">
+                        <div class="glass-card text-center"
+                            style="display: flex; flex-direction: column; height: 100%;">
+                            <div class="card-icon" style="font-size: 3rem; margin: 0 auto;">⚠️</div>
+                            <h3>Problem</h3>
+                            <div class="card-img-container">
+                                <img src="./images/problem-leak.webp" alt="Puščajoča pipa" class="img-enhanced"
+                                    loading="lazy">
+                            </div>
+                            <p style="margin-top: auto;">Visok račun za vodo? WC kotliček pušča in vi tega ne veste.
+                                Puščanje lahko mesečno
+                                stane
+                                <strong>50€+</strong>.
+                            </p>
                         </div>
-                        <p style="margin-top: auto;">Visok račun za vodo? WC kotliček pušča in vi tega ne veste.
-                            Puščanje lahko mesečno
-                            stane
-                            <strong>50€+</strong>.
-                        </p>
-                    </div>
-                    <div class="glass-card text-center"
-                        style="border: 2px solid var(--accent); display: flex; flex-direction: column; height: 100%;">
-                        <div class="card-icon" style="font-size: 3rem; margin: 0 auto;">📱</div>
-                        <h3>Rešitev</h3>
-                        <div class="card-img-container">
-                            <img src="./images/app-mockup.png" alt="AURA Aplikacija" class="img-enhanced"
-                                loading="lazy">
+                        <div class="glass-card text-center"
+                            style="border: 2px solid var(--accent); display: flex; flex-direction: column; height: 100%;">
+                            <div class="card-icon" style="font-size: 3rem; margin: 0 auto;">📱</div>
+                            <h3>Rešitev</h3>
+                            <div class="card-img-container">
+                                <img src="./images/app-mockup.webp" alt="AURA Aplikacija" class="img-enhanced"
+                                    loading="lazy">
+                            </div>
+                            <p style="margin-top: auto;">Pametni vodomer zazna puščanje in <strong>vas takoj
+                                    obvesti</strong> na telefon.
+                                Ugasnete
+                                vodo in se izognete visokemu računu.</p>
                         </div>
-                        <p style="margin-top: auto;">Pametni vodomer zazna puščanje in <strong>vas takoj
-                                obvesti</strong> na telefon.
-                            Ugasnete
-                            vodo in se izognete visokemu računu.</p>
-                    </div>
-                    <div class="glass-card text-center" style="display: flex; flex-direction: column; height: 100%;">
-                        <div class="card-icon" style="font-size: 3rem; margin: 0 auto;">💰</div>
-                        <h3>Rezultat</h3>
-                        <div class="card-img-container">
-                            <img src="./images/family.png" alt="Zadovoljna družina" class="img-enhanced" loading="lazy">
+                        <div class="glass-card text-center"
+                            style="display: flex; flex-direction: column; height: 100%;">
+                            <div class="card-icon" style="font-size: 3rem; margin: 0 auto;">💰</div>
+                            <h3>Rezultat</h3>
+                            <div class="card-img-container">
+                                <img src="./images/family.webp" alt="Zadovoljna družina" class="img-enhanced"
+                                    loading="lazy">
+                            </div>
+                            <p style="margin-top: auto;">Družine <strong>prihranijo do 30%</strong> stroškov za vodo.
+                                Povprečno 300€ letno!
+                            </p>
                         </div>
-                        <p style="margin-top: auto;">Družine <strong>prihranijo do 30%</strong> stroškov za vodo.
-                            Povprečno 300€ letno!
-                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- How It Works Section -->
-        <section id="how-it-works" class="section">
-            <div class="container">
-                <h2 class="section-title text-center">Kako deluje v 3 korakih</h2>
-                <div class="cards-grid" style="margin-top: 3rem;">
-                    <div class="glass-card">
-                        <div class="card-icon" style="font-size: 3rem;">🔧</div>
-                        <h3>1. Namestitev</h3>
-                        <p>Naš tehnik v 1 uri zamenja vaš star vodomer s pametnim. Brez gradnje,
-                            brez trganja.</p>
-                        <a href="#namestitev" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Izvedi več</a>
-                    </div>
-                    <div class="glass-card">
-                        <div class="card-icon" style="font-size: 3rem;">📊</div>
-                        <h3>2. Spremljanje</h3>
-                        <p>Prenesite mobilno aplikacijo AURA in spremljajte porabo kadarkoli.
-                            Grafični prikazi,
-                            zgodovina,
-                            primerjave.</p>
-                        <a href="#spremljanje" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Izvedi več</a>
-                    </div>
-                    <div class="glass-card">
-                        <div class="card-icon" style="font-size: 3rem;">🔔</div>
-                        <h3>3. Varčevanje</h3>
-                        <p>Sistema vas obvesti, če zazna puščanje ali neobičajno porabo.
-                            Ukrepajte takoj in
-                            varčujte!
-                        </p>
-                        <a href="#varcevanje" class="btn-secondary"
-                            style="margin-top: 1rem; display: inline-block;">Izvedi več</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Detailed Steps Section -->
-        <section class="section">
-            <div class="container">
-
-                <!-- Step 1: Namestitev -->
-                <div id="namestitev" class="grid-2" style="gap: 4rem; align-items: center; margin-bottom: 6rem;">
-                    <div>
-                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🔧</div>
-                        <h2 class="section-title">1. Brezskrbna Namestitev</h2>
-                        <p class="lead">Pozabite na razbijanje in umazanijo. Naša ekipa poskrbi za vse.</p>
-                        <p>Zamenjava starega vodomera s pametnim ultrazvočnim števcem je rutinski postopek, ki ga naši
-                            strokovnjaki opravijo hitro in profesionalno. Ne posegamo v vašo inštalacijo dlje, kot je
-                            potrebno.</p>
-                    </div>
-                    <div>
+            <!-- How It Works Section -->
+            <section id="how-it-works" class="section">
+                <div class="container">
+                    <h2 class="section-title text-center">Kako deluje v 3 korakih</h2>
+                    <div class="cards-grid" style="margin-top: 3rem;">
                         <div class="glass-card">
-                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Potek namestitve:</h3>
-                            <ul class="card-list">
-                                <li><strong>Brez gradbenih del:</strong> Menjava poteka na obstoječem priključnem mestu.
+                            <div class="card-icon" style="font-size: 3rem;">🔧</div>
+                            <h3>1. Namestitev</h3>
+                            <p>Naš tehnik v 1 uri zamenja vaš star vodomer s pametnim. Brez gradnje,
+                                brez trganja.</p>
+                            <a href="#namestitev" class="btn-secondary" style="margin-top: 1rem; display: inline-block;"
+                                title="Izvedi več o namestitvi">Izvedi več</a>
+                        </div>
+                        <div class="glass-card">
+                            <div class="card-icon" style="font-size: 3rem;">📊</div>
+                            <h3>2. Spremljanje</h3>
+                            <p>Prenesite mobilno aplikacijo AURA in spremljajte porabo kadarkoli.
+                                Grafični prikazi,
+                                zgodovina,
+                                primerjave.</p>
+                            <a href="#spremljanje" class="btn-secondary"
+                                style="margin-top: 1rem; display: inline-block;" title="Izvedi več o spremljanju">Izvedi
+                                več</a>
+                        </div>
+                        <div class="glass-card">
+                            <div class="card-icon" style="font-size: 3rem;">🔔</div>
+                            <h3>3. Varčevanje</h3>
+                            <p>Sistema vas obvesti, če zazna puščanje ali neobičajno porabo.
+                                Ukrepajte takoj in
+                                varčujte!
+                            </p>
+                            <a href="#varcevanje" class="btn-secondary" style="margin-top: 1rem; display: inline-block;"
+                                title="Izvedi več o varčevanju">Izvedi več</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Detailed Steps Section -->
+            <section class="section">
+                <div class="container">
+
+                    <!-- Step 1: Namestitev -->
+                    <div id="namestitev" class="grid-2" style="gap: 4rem; align-items: center; margin-bottom: 6rem;">
+                        <div>
+                            <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🔧</div>
+                            <h2 class="section-title">1. Brezskrbna Namestitev</h2>
+                            <p class="lead">Pozabite na razbijanje in umazanijo. Naša ekipa poskrbi za vse.</p>
+                            <p>Zamenjava starega vodomera s pametnim ultrazvočnim števcem je rutinski postopek, ki ga
+                                naši
+                                strokovnjaki opravijo hitro in profesionalno. Ne posegamo v vašo inštalacijo dlje, kot
+                                je
+                                potrebno.</p>
+                        </div>
+                        <div>
+                            <div class="glass-card">
+                                <h3 style="color: var(--primary); margin-bottom: 1rem;">Potek namestitve:</h3>
+                                <ul class="card-list">
+                                    <li><strong>Brez gradbenih del:</strong> Menjava poteka na obstoječem priključnem
+                                        mestu.
+                                    </li>
+                                    <li><strong>Trajanje:</strong> Povprečno le 45-60 minut.</li>
+                                    <li><strong>Preizkus:</strong> Takojšnje testiranje tesnjenja in komunikacije.</li>
+                                    <li><strong>Uvajanje:</strong> Kratka predstavitev delovanja sistema uporabniku.
+                                    </li>
+                                </ul>
+                                <div class="stats-grid"
+                                    style="display: grid; gap: 1rem; margin-top: 2rem; grid-template-columns: 1fr 1fr;">
+                                    <div class="text-center">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">1h</div>
+                                        <p style="font-size: 0.9rem;">Čas dela</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">0</div>
+                                        <p style="font-size: 0.9rem;">Nereda</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 1b: Retrofit Option (Alternative) -->
+                    <div class="grid-2" style="gap: 4rem; align-items: center; margin-bottom: 6rem;">
+                        <div style="order: 2;">
+                            <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">📡</div>
+                            <h2 class="section-title">Ali Pametna Nadgradnja?</h2>
+                            <p class="lead">Imate novejši vodomer? Nadgradimo ga!</p>
+                            <p>Če imate obstoječ vodomer, ki je še v dobrem stanju, lahko nanj namestimo <strong>pametni
+                                    modul</strong>. S tem pridobite večino funkcij pametnega omrežja brez menjave
+                                števca.
+                            </p>
+                            <p style="font-size: 0.9rem; color: #64748b; margin-top: 1rem;"><em>*Opomba: Nekatere
+                                    napredne
+                                    funkcije (kot je zaznavanje mikropuščanj) so odvisne od natančnosti vašega
+                                    trenutnega vodomera.</em></p>
+                        </div>
+                        <div style="order: 1;">
+                            <div class="glass-card">
+                                <h3 style="color: var(--primary); margin-bottom: 1rem;">Kaj pridobite z nadgradnjo?</h3>
+                                <ul class="card-list">
+                                    <li><strong>Avtomatsko odčitavanje:</strong> Brez mesečnega popisa stanja.</li>
+                                    <li><strong>Alarmiranje:</strong> Obvestila o prekomerni porabi.</li>
+                                    <li><strong>Nižji strošek:</strong> Cenejša rešitev od menjave celotnega števca.
+                                    </li>
+                                    <li><strong>Preprosta montaža:</strong> Modul se le "klikne" na obstoječ števec.
+                                    </li>
+                                </ul>
+                                <div class="stats-grid"
+                                    style="display: grid; gap: 1rem; margin-top: 2rem; grid-template-columns: 1fr 1fr;">
+                                    <div class="text-center">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">15min
+                                        </div>
+                                        <p style="font-size: 0.9rem;">Namestitev</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">80%</div>
+                                        <p style="font-size: 0.9rem;">Funkcij</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Spremljanje -->
+                    <div id="spremljanje" class="grid-2" style="gap: 4rem; align-items: center; margin-bottom: 6rem;">
+                        <div style="order: 2;"> <!-- Swap order for visual rhythm -->
+                            <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
+                            <h2 class="section-title">2. Pametno Spremljanje</h2>
+                            <p class="lead">Vaša poraba vode na dlani. Kadarkoli, kjerkoli.</p>
+                            <p>Aplikacija AURA vam omogoča vpogled v porabo vode v realnem času. Preverite, koliko vode
+                                porabite med tuširanjem, zalivanjem vrta ali pranjem perila.</p>
+                        </div>
+                        <div style="order: 1;">
+                            <div class="glass-card">
+                                <h3 style="color: var(--primary); margin-bottom: 1rem;">Funkcije aplikacije:</h3>
+                                <ul class="card-list">
+                                    <li><strong>Grafični prikazi:</strong> Dnevni, tedenski in mesečni pregledi porabe.
+                                    </li>
+                                    <li><strong>Limiti porabe:</strong> Nastavite omejitve in prejemajte opozorila.</li>
+                                    <li><strong>Primerjave:</strong> Primerjajte porabo s preteklimi obdobji.</li>
+                                    <li><strong>Izvoz podatkov:</strong> CSV izvoz za lastno analizo.</li>
+                                </ul>
+                                <div class="stats-grid"
+                                    style="display: grid; gap: 1rem; margin-top: 2rem; grid-template-columns: 1fr 1fr;">
+                                    <div class="text-center">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">24/7</div>
+                                        <p style="font-size: 0.9rem;">Dostop</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">📱</div>
+                                        <p style="font-size: 0.9rem;">Mobil & Web</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Varčevanje -->
+                    <div id="varcevanje" class="grid-2" style="gap: 4rem; align-items: center;">
+                        <div>
+                            <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🔔</div>
+                            <h2 class="section-title">3. Aktivno Varčevanje</h2>
+                            <p class="lead">Sistem, ki plača samega sebe.</p>
+                            <p>Največji prihranki ne pridejo iz "manj tuširanja", ampak iz odprave nevidnih puščanj.
+                                WC kotliček, ki tiho pušča, vas lahko stane 200€ letno. Mi to preprečimo.</p>
+                        </div>
+                        <div>
+                            <div class="glass-card">
+                                <h3 style="color: var(--primary); margin-bottom: 1rem;">Kaj pridobite?</h3>
+                                <div class="stats-grid" style="display: grid; gap: 2rem; margin-top: 2rem;">
+                                    <div>
+                                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">30%</div>
+                                        <p>Povprečni letni prihranek na računu</p>
+                                    </div>
+                                    <div>
+                                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">24/7</div>
+                                        <p>Mirna vest z alarmi za izliv</p>
+                                    </div>
+                                </div>
+                                <div
+                                    style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
+                                    <p><strong>Primer:</strong> Andrej iz Celja je prihranil 450€, ker je sistem zaznal
+                                        počeno cev na vrtu.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Packages Section -->
+            <section id="packages" class="section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Paketi za gospodinjstva</h2>
+                        <p class="section-desc">Izberite paket, ki ustreza vašim potrebam. Vsi paketi
+                            vključujejo
+                            mobilno
+                            aplikacijo.</p>
+                    </div>
+                    <div class="pricing-grid"
+                        style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 800px; margin: 0 auto;">
+                        <!-- Silver Package -->
+                        <div class="pricing-card glass-card">
+                            <div class="pricing-header">
+                                <h3 class="package-name">Srebrni</h3>
+                                <div class="price">4€ <span class="period">/ mesec</span></div>
+                                <p class="package-desc">Osnovno spremljanje za varčne družine.</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><span class="check">✓</span> Pametni vodomer iPerl</li>
+                                <li><span class="check">✓</span> Mesečni pregled porabe</li>
+                                <li><span class="check">✓</span> Opozorila za puščanje</li>
+                                <li><span class="check">✓</span> Mobilna aplikacija</li>
+                                <li><span class="check">✓</span> Brez vezave</li>
+                            </ul>
+                            <a href="index.html#contact" class="btn-secondary w-100"
+                                title="Povprašaj po paketu Srebrni">Povprašaj</a>
+                        </div>
+
+                        <!-- Gold Package -->
+                        <div class="pricing-card glass-card popular">
+                            <div class="popular-tag">Najbolj priljubljeno</div>
+                            <div class="pricing-header">
+                                <h3 class="package-name">Zlati</h3>
+                                <div class="price">7€ <span class="period">/ mesec</span></div>
+                                <p class="package-desc">Popoln nadzor in mir v vaši hiši.</p>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><span class="check">✓</span> Vse iz Srebrnega paketa</li>
+                                <li><span class="check">✓</span> <strong>Spremljanje v realnem času 24/7</strong>
                                 </li>
-                                <li><strong>Trajanje:</strong> Povprečno le 45-60 minut.</li>
-                                <li><strong>Preizkus:</strong> Takojšnje testiranje tesnjenja in komunikacije.</li>
-                                <li><strong>Uvajanje:</strong> Kratka predstavitev delovanja sistema uporabniku.</li>
+                                <li><span class="check">✓</span> <strong>Takojšnja obvestila (SMS + push)</strong>
+                                </li>
+                                <li><span class="check">✓</span> Napredna analitika porabe</li>
+                                <li><span class="check">✓</span> Opozorila za zmrzal</li>
+                                <li><span class="check">✓</span> Prioritetna podpora</li>
                             </ul>
-                            <div class="stats-grid"
-                                style="display: grid; gap: 1rem; margin-top: 2rem; grid-template-columns: 1fr 1fr;">
-                                <div class="text-center">
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">1h</div>
-                                    <p style="font-size: 0.9rem;">Čas dela</p>
-                                </div>
-                                <div class="text-center">
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">0</div>
-                                    <p style="font-size: 0.9rem;">Nereda</p>
-                                </div>
+                            <a href="index.html#contact" class="btn-primary w-100" title="Naroči Zlati paket">Naroči
+                                zdaj</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="section">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <h2 class="section-title">Pogosta vprašanja</h2>
+                    </div>
+                    <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
+                        <!-- FAQ Item 1 -->
+                        <div class="faq-item glass-card">
+                            <button class="faq-question">
+                                <span>Kako poteka namestitev?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Naš certificiran tehnik pride na vaš naslov, odstrani star vodomer in v približno
+                                    1 uri
+                                    namesti novega. Namestitev ne zahteva dodatnih gradbenih del. Po namestitvi vam
+                                    pokaže,
+                                    kako uporabljati aplikacijo.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 2 -->
+                        <div class="faq-item glass-card">
+                            <button class="faq-question">
+                                <span>Ali potrebujem internet doma?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Ne! Pametni vodomer uporablja mobilno omrežje (NB-IoT tehnologijo), zato deluje
+                                    popolnoma samostojno brez vašega WiFi-ja ali interneta. Podatke lahko gledate na
+                                    telefonu kjerkoli.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 3 -->
+                        <div class="faq-item glass-card">
+                            <button class="faq-question">
+                                <span>Koliko zares prihranim?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Povprečna družina prihrani <strong>20-30% stroškov za vodo</strong>, kar je
+                                    približno
+                                    300€ letno. Največji prihranki nastanejo z zgodnjim odkrivanjem puščanj
+                                    (pušča WC,
+                                    pipe) in bolj zavestno porabo.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 4 -->
+                        <div class="faq-item glass-card">
+                            <button class="faq-question">
+                                <span>Kaj če se preselim?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Vodomer ostane na naslovu (je last vodovoda ali lastnika stanovanja). Lahko pa
+                                    prenehate z mesečno naročnino kadarkoli, brez stroškov. V primeru selitve vas
+                                    bomo
+                                    z veseljem povezali z novim lastnikom.</p>
+                            </div>
+                        </div>
+                        <!-- FAQ Item 5 -->
+                        <div class="faq-item glass-card">
+                            <button class="faq-question">
+                                <span>Ali je to varno za moje podatke?</span>
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Absolutno! Vsi podatki so šifrirani in shranjeni v skladu z GDPR predpisi. Vidite
+                                    lahko
+                                    samo svoje podatke. Nobenih osebnih informacij ne prodajamo tretjim osebam.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Step 1b: Retrofit Option (Alternative) -->
-                <div class="grid-2" style="gap: 4rem; align-items: center; margin-bottom: 6rem;">
-                    <div style="order: 2;">
-                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">📡</div>
-                        <h2 class="section-title">Ali Pametna Nadgradnja?</h2>
-                        <p class="lead">Imate novejši vodomer? Nadgradimo ga!</p>
-                        <p>Če imate obstoječ vodomer, ki je še v dobrem stanju, lahko nanj namestimo <strong>pametni
-                                modul</strong>. S tem pridobite večino funkcij pametnega omrežja brez menjave števca.
-                        </p>
-                        <p style="font-size: 0.9rem; color: #64748b; margin-top: 1rem;"><em>*Opomba: Nekatere napredne
-                                funkcije (kot je zaznavanje mikropuščanj) so odvisne od natančnosti vašega
-                                trenutnega vodomera.</em></p>
-                    </div>
-                    <div style="order: 1;">
-                        <div class="glass-card">
-                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Kaj pridobite z nadgradnjo?</h3>
-                            <ul class="card-list">
-                                <li><strong>Avtomatsko odčitavanje:</strong> Brez mesečnega popisa stanja.</li>
-                                <li><strong>Alarmiranje:</strong> Obvestila o prekomerni porabi.</li>
-                                <li><strong>Nižji strošek:</strong> Cenejša rešitev od menjave celotnega števca.</li>
-                                <li><strong>Preprosta montaža:</strong> Modul se le "klikne" na obstoječ števec.</li>
-                            </ul>
-                            <div class="stats-grid"
-                                style="display: grid; gap: 1rem; margin-top: 2rem; grid-template-columns: 1fr 1fr;">
-                                <div class="text-center">
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">15min</div>
-                                    <p style="font-size: 0.9rem;">Namestitev</p>
+            <!-- Contact Section -->
+            <section id="contact" class="section bg-dark text-white">
+                <div class="container">
+                    <div class="grid-2">
+                        <div>
+                            <h2 class="section-title text-white">Zainteresirani?</h2>
+                            <p class="mb-4">Stopite v stik z nami za brezplačen informativni sestanek ali ponudbo.</p>
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <span class="label">Telefon:</span>
+                                    <span class="value"><a href="tel:+38630680160" class="text-white"
+                                            title="Pokliči ARSS">+386 30 680 160</a></span>
                                 </div>
-                                <div class="text-center">
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">80%</div>
-                                    <p style="font-size: 0.9rem;">Funkcij</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 2: Spremljanje -->
-                <div id="spremljanje" class="grid-2" style="gap: 4rem; align-items: center; margin-bottom: 6rem;">
-                    <div style="order: 2;"> <!-- Swap order for visual rhythm -->
-                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">📊</div>
-                        <h2 class="section-title">2. Pametno Spremljanje</h2>
-                        <p class="lead">Vaša poraba vode na dlani. Kadarkoli, kjerkoli.</p>
-                        <p>Aplikacija AURA vam omogoča vpogled v porabo vode v realnem času. Preverite, koliko vode
-                            porabite med tuširanjem, zalivanjem vrta ali pranjem perila.</p>
-                    </div>
-                    <div style="order: 1;">
-                        <div class="glass-card">
-                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Funkcije aplikacije:</h3>
-                            <ul class="card-list">
-                                <li><strong>Grafični prikazi:</strong> Dnevni, tedenski in mesečni pregledi porabe.</li>
-                                <li><strong>Limiti porabe:</strong> Nastavite omejitve in prejemajte opozorila.</li>
-                                <li><strong>Primerjave:</strong> Primerjajte porabo s preteklimi obdobji.</li>
-                                <li><strong>Izvoz podatkov:</strong> CSV izvoz za lastno analizo.</li>
-                            </ul>
-                            <div class="stats-grid"
-                                style="display: grid; gap: 1rem; margin-top: 2rem; grid-template-columns: 1fr 1fr;">
-                                <div class="text-center">
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">24/7</div>
-                                    <p style="font-size: 0.9rem;">Dostop</p>
-                                </div>
-                                <div class="text-center">
-                                    <div style="font-size: 2rem; font-weight: 700; color: var(--accent);">📱</div>
-                                    <p style="font-size: 0.9rem;">Mobil & Web</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Step 3: Varčevanje -->
-                <div id="varcevanje" class="grid-2" style="gap: 4rem; align-items: center;">
-                    <div>
-                        <div class="card-icon" style="font-size: 3rem; margin-bottom: 1rem;">🔔</div>
-                        <h2 class="section-title">3. Aktivno Varčevanje</h2>
-                        <p class="lead">Sistem, ki plača samega sebe.</p>
-                        <p>Največji prihranki ne pridejo iz "manj tuširanja", ampak iz odprave nevidnih puščanj.
-                            WC kotliček, ki tiho pušča, vas lahko stane 200€ letno. Mi to preprečimo.</p>
-                    </div>
-                    <div>
-                        <div class="glass-card">
-                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Kaj pridobite?</h3>
-                            <div class="stats-grid" style="display: grid; gap: 2rem; margin-top: 2rem;">
-                                <div>
-                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">30%</div>
-                                    <p>Povprečni letni prihranek na računu</p>
-                                </div>
-                                <div>
-                                    <div style="font-size: 3rem; font-weight: 700; color: var(--accent);">24/7</div>
-                                    <p>Mirna vest z alarmi za izliv</p>
+                                <div class="contact-item">
+                                    <span class="label">Email:</span>
+                                    <span class="value"><a href="mailto:jakahrovat.arss@gmail.com" class="text-white"
+                                            title="Pošlji email na ARSS">jakahrovat.arss@gmail.com</a></span>
                                 </div>
                             </div>
-                            <div
-                                style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.1);">
-                                <p><strong>Primer:</strong> Andrej iz Celja je prihranil 450€, ker je sistem zaznal
-                                    počeno cev na vrtu.</p>
-                            </div>
+                        </div>
+                        <div class="map-container glass-card">
+                            <form class="contact-form" action="https://formsubmit.co/d39b2fbdcfcfea72f645c1346b5018ef"
+                                method="POST" enctype="multipart/form-data">
+                                <input type="hidden" name="_subject" value="Nova povpraševanje - Gospodinjstva">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next"
+                                    value="https://jakahrovatarss-del.github.io/arss-spletna-stran-/hvala.html">
+                                <div class="form-group">
+                                    <label for="name">Ime in priimek</label>
+                                    <input type="text" id="name" name="name" placeholder="Janez Novak" required
+                                        autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="package">Izberite paket</label>
+                                    <select id="package" name="package" required
+                                        style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
+                                        <option value="" disabled selected>-- Izberite paket --</option>
+                                        <option value="Srebrni">Srebrni</option>
+                                        <option value="Zlati">Zlati</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-poštni naslov</label>
+                                    <input type="email" id="email" name="email" placeholder="janez@primer.si" required
+                                        autocomplete="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Sporočilo</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Vaše sporočilo..."
+                                        required></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="meter-image" class="file-upload-label">
+                                        📷 Slika vodometra (opcijsko)
+                                    </label>
+                                    <input type="file" id="meter-image" name="meter-image" accept="image/*"
+                                        class="file-upload-input">
+                                </div>
+                                <button type="submit" class="btn-primary w-full">Pošlji povpraševanje</button>
+                            </form>
                         </div>
                     </div>
                 </div>
+            </section>
 
-            </div>
-        </section>
-
-        <!-- Packages Section -->
-        <section id="packages" class="section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Paketi za gospodinjstva</h2>
-                    <p class="section-desc">Izberite paket, ki ustreza vašim potrebam. Vsi paketi
-                        vključujejo
-                        mobilno
-                        aplikacijo.</p>
-                </div>
-                <div class="pricing-grid"
-                    style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 800px; margin: 0 auto;">
-                    <!-- Silver Package -->
-                    <div class="pricing-card glass-card">
-                        <div class="pricing-header">
-                            <h3 class="package-name">Srebrni</h3>
-                            <div class="price">4€ <span class="period">/ mesec</span></div>
-                            <p class="package-desc">Osnovno spremljanje za varčne družine.</p>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><span class="check">✓</span> Pametni vodomer iPerl</li>
-                            <li><span class="check">✓</span> Mesečni pregled porabe</li>
-                            <li><span class="check">✓</span> Opozorila za puščanje</li>
-                            <li><span class="check">✓</span> Mobilna aplikacija</li>
-                            <li><span class="check">✓</span> Brez vezave</li>
-                        </ul>
-                        <a href="index.html#contact" class="btn-secondary w-100">Povprašaj</a>
-                    </div>
-
-                    <!-- Gold Package -->
-                    <div class="pricing-card glass-card popular">
-                        <div class="popular-tag">Najbolj priljubljeno</div>
-                        <div class="pricing-header">
-                            <h3 class="package-name">Zlati</h3>
-                            <div class="price">7€ <span class="period">/ mesec</span></div>
-                            <p class="package-desc">Popoln nadzor in mir v vaši hiši.</p>
-                        </div>
-                        <ul class="pricing-features">
-                            <li><span class="check">✓</span> Vse iz Srebrnega paketa</li>
-                            <li><span class="check">✓</span> <strong>Spremljanje v realnem času 24/7</strong>
-                            </li>
-                            <li><span class="check">✓</span> <strong>Takojšnja obvestila (SMS + push)</strong>
-                            </li>
-                            <li><span class="check">✓</span> Napredna analitika porabe</li>
-                            <li><span class="check">✓</span> Opozorila za zmrzal</li>
-                            <li><span class="check">✓</span> Prioritetna podpora</li>
-                        </ul>
-                        <a href="index.html#contact" class="btn-primary w-100">Naroči zdaj</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="section">
-            <div class="container">
-                <div class="section-header text-center">
-                    <h2 class="section-title">Pogosta vprašanja</h2>
-                </div>
-                <div class="faq-container" style="max-width: 800px; margin: 0 auto;">
-                    <!-- FAQ Item 1 -->
-                    <div class="faq-item glass-card">
-                        <button class="faq-question">
-                            <span>Kako poteka namestitev?</span>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Naš certificiran tehnik pride na vaš naslov, odstrani star vodomer in v približno
-                                1 uri
-                                namesti novega. Namestitev ne zahteva dodatnih gradbenih del. Po namestitvi vam
-                                pokaže,
-                                kako uporabljati aplikacijo.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ Item 2 -->
-                    <div class="faq-item glass-card">
-                        <button class="faq-question">
-                            <span>Ali potrebujem internet doma?</span>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Ne! Pametni vodomer uporablja mobilno omrežje (NB-IoT tehnologijo), zato deluje
-                                popolnoma samostojno brez vašega WiFi-ja ali interneta. Podatke lahko gledate na
-                                telefonu kjerkoli.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ Item 3 -->
-                    <div class="faq-item glass-card">
-                        <button class="faq-question">
-                            <span>Koliko zares prihranim?</span>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Povprečna družina prihrani <strong>20-30% stroškov za vodo</strong>, kar je
-                                približno
-                                300€ letno. Največji prihranki nastanejo z zgodnjim odkrivanjem puščanj
-                                (pušča WC,
-                                pipe) in bolj zavestno porabo.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ Item 4 -->
-                    <div class="faq-item glass-card">
-                        <button class="faq-question">
-                            <span>Kaj če se preselim?</span>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Vodomer ostane na naslovu (je last vodovoda ali lastnika stanovanja). Lahko pa
-                                prenehate z mesečno naročnino kadarkoli, brez stroškov. V primeru selitve vas
-                                bomo
-                                z veseljem povezali z novim lastnikom.</p>
-                        </div>
-                    </div>
-                    <!-- FAQ Item 5 -->
-                    <div class="faq-item glass-card">
-                        <button class="faq-question">
-                            <span>Ali je to varno za moje podatke?</span>
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            <p>Absolutno! Vsi podatki so šifrirani in shranjeni v skladu z GDPR predpisi. Vidite
-                                lahko
-                                samo svoje podatke. Nobenih osebnih informacij ne prodajamo tretjim osebam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section bg-dark text-white">
-            <div class="container">
-                <div class="grid-2">
-                    <div>
-                        <h2 class="section-title text-white">Zainteresirani?</h2>
-                        <p class="mb-4">Stopite v stik z nami za brezplačen informativni sestanek ali ponudbo.</p>
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <span class="label">Telefon:</span>
-                                <span class="value"><a href="tel:+38630680160" class="text-white">+386 30 680
-                                        160</a></span>
-                                480</a></span>
-                            </div>
-                            <div class="contact-item">
-                                <span class="label">Email:</span>
-                                <span class="value"><a href="mailto:jakahrovat.arss@gmail.com"
-                                        class="text-white">jakahrovat.arss@gmail.com</a></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="map-container glass-card">
-                        <form class="contact-form" action="https://formsubmit.co/d39b2fbdcfcfea72f645c1346b5018ef"
-                            method="POST" enctype="multipart/form-data">
-                            <input type="hidden" name="_subject" value="Nova povpraševanje - Gospodinjstva">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next"
-                                value="https://jakahrovatarss-del.github.io/arss-spletna-stran-/hvala.html">
-                            <div class="form-group">
-                                <label for="name">Ime in priimek</label>
-                                <input type="text" id="name" name="name" placeholder="Janez Novak" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="package">Izberite paket</label>
-                                <select id="package" name="package" required
-                                    style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 8px; font-family: inherit;">
-                                    <option value="" disabled selected>-- Izberite paket --</option>
-                                    <option value="Srebrni">Srebrni</option>
-                                    <option value="Zlati">Zlati</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-poštni naslov</label>
-                                <input type="email" id="email" name="email" placeholder="janez@primer.si" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Sporočilo</label>
-                                <textarea id="message" name="message" rows="4" placeholder="Vaše sporočilo..."
-                                    required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="meter-image" class="file-upload-label">
-                                    📷 Slika vodometra (opcijsko)
-                                </label>
-                                <input type="file" id="meter-image" name="meter-image" accept="image/*"
-                                    class="file-upload-input">
-                            </div>
-                            <button type="submit" class="btn-primary w-full">Pošlji povpraševanje</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </main>
 
         <footer class="footer">
             <div class="container text-center">
@@ -507,9 +533,10 @@
         </footer>
     </div>
 
-    <script src="./analytics-config.js"></script>
-    <script src="./form-config.js"></script>
-    <script src="./main.js"></script>
+    <script src="./cookie-consent.js" defer></script>
+    <script src="./analytics-config.js" defer></script>
+    <script src="./form-config.js" defer></script>
+    <script src="./main.js" defer></script>
 </body>
 
 </html>

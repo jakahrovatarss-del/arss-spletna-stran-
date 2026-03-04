@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="sl">
 
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- Cookie Consent & Analytics -->
-    <script src="./cookie-consent.js"></script>
+    <!-- Preload hero background for LCP -->
+    <link rel="preload" as="image" href="./hero-bg.webp" type="image/webp" fetchpriority="high">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ARSS - Pametno upravljanje vode</title>
@@ -24,8 +24,8 @@
         <!-- Navigation -->
         <header class="header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                <a href="index.html" class="logo" title="ARSS - Domov">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo" width="86" height="95">
                 </a>
                 <button class="mobile-menu-btn" aria-label="Odpri meni">
                     <span class="bar"></span>
@@ -33,31 +33,31 @@
                     <span class="bar"></span>
                 </button>
                 <nav class="nav-links">
-                    <a href="index.html" class="nav-link active">Domov</a>
+                    <a href="index.html" class="nav-link active" title="Domov">Domov</a>
 
                     <div class="dropdown">
-                        <a href="gospodinjstva.html" class="nav-link">Gospodinjstva ▾</a>
+                        <a href="gospodinjstva.html" class="nav-link" title="Za gospodinjstva - pametni vodomeri">Gospodinjstva ▾</a>
                         <div class="dropdown-content">
-                            <a href="gospodinjstva.html#features">Prednosti</a>
-                            <a href="gospodinjstva.html#how-it-works">Kako deluje</a>
-                            <a href="gospodinjstva.html#packages">Paketi</a>
-                            <a href="gospodinjstva.html#faq">Pogosta vprašanja</a>
+                            <a href="gospodinjstva.html#features" title="Prednosti za gospodinjstva">Prednosti</a>
+                            <a href="gospodinjstva.html#how-it-works" title="Kako deluje - gospodinjstva">Kako deluje</a>
+                            <a href="gospodinjstva.html#packages" title="Paketi za gospodinjstva">Paketi</a>
+                            <a href="gospodinjstva.html#faq" title="Pogosta vprašanja - gospodinjstva">Pogosta vprašanja</a>
                         </div>
                     </div>
 
                     <div class="dropdown">
-                        <a href="industrija.html" class="nav-link">Industrija ▾</a>
+                        <a href="industrija.html" class="nav-link" title="Za industrijo in vodovode">Industrija ▾</a>
                         <div class="dropdown-content">
-                            <a href="merjenje.html">Pametni vodomeri</a>
-                            <a href="komunikacija.html">Komunikacija</a>
-                            <a href="programska-oprema.html">AURA Platforma</a>
-                            <a href="industrija.html#references">Reference</a>
-                            <a href="industrija.html#packages">Paketi</a>
+                            <a href="merjenje.html" title="Pametni vodomeri">Pametni vodomeri</a>
+                            <a href="komunikacija.html" title="Komunikacijske rešitve">Komunikacija</a>
+                            <a href="programska-oprema.html" title="AURA Platforma">AURA Platforma</a>
+                            <a href="industrija.html#references" title="Reference">Reference</a>
+                            <a href="industrija.html#packages" title="Paketi za industrijo">Paketi</a>
                         </div>
                     </div>
 
-                    <a href="#about" class="nav-link">O nas</a>
-                    <a href="#contact" class="nav-link">Kontakt</a>
+                    <a href="#about" class="nav-link" title="Pojdi na sekcijo O nas">O nas</a>
+                    <a href="#contact" class="nav-link" title="Pojdi na kontaktni obrazec">Kontakt</a>
                 </nav>
             </div>
         </header>
@@ -65,15 +65,15 @@
         <!-- Hero Section -->
         <section class="hero">
             <div class="hero-bg"
-                style="background: linear-gradient(135deg, rgba(10, 25, 47, 0.85) 0%, rgba(17, 34, 64, 0.9) 100%), url('./hero-bg.png') center/cover no-repeat;">
+                style="background: linear-gradient(135deg, rgba(10, 25, 47, 0.85) 0%, rgba(17, 34, 64, 0.9) 100%), url('./hero-bg.webp') center/cover no-repeat;">
             </div>
             <div class="container">
                 <div class="hero-content" style="text-align: center; margin: 0 auto; max-width: 800px;">
                     <h1 class="hero-title">Pametno upravljanje z vodo</h1>
                     <p class="hero-subtitle">Odkrijte puščanje, preden pride račun. Varčujte vodo, varčujte denar.</p>
                     <div class="hero-actions" style="justify-content: center;">
-                        <a href="gospodinjstva.html" class="btn-primary">Za gospodinjstva</a>
-                        <a href="industrija.html" class="btn-secondary">Za industrijo</a>
+                        <a href="gospodinjstva.html" class="btn-primary" title="Za gospodinjstva - pametni vodomeri">Za gospodinjstva</a>
+                        <a href="industrija.html" class="btn-secondary" title="Za industrijo in vodovode">Za industrijo</a>
                     </div>
                 </div>
             </div>
@@ -88,12 +88,15 @@
                 </p>
                 <div class="grid-2" style="gap: 2rem; max-width: 1000px; margin: 0 auto;">
                     <!-- Households Card -->
-                    <a href="gospodinjstva.html" class="glass-card"
+                    <a href="gospodinjstva.html" class="glass-card" title="Za vaš dom - pametni vodomeri"
                         style="text-decoration: none; color: inherit; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; display: block;">
                         <div
                             style="width: 100%; height: 150px; margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden;">
-                            <img src="./images/family-white.png" alt="Družina"
-                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="./images/family-white.webp" type="image/webp">
+                                <img src="./images/family-white.png" alt="Družina"
+                                    style="width: 100%; height: 100%; object-fit: cover;" width="520" height="150">
+                            </picture>
                         </div>
                         <h3 style="font-size: 2rem; margin-bottom: 1rem;">Za vaš dom</h3>
                         <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;">
@@ -113,12 +116,15 @@
                     </a>
 
                     <!-- Industry Card -->
-                    <a href="industrija.html" class="glass-card"
+                    <a href="industrija.html" class="glass-card" title="Za vašo industrijo - tehnološke rešitve"
                         style="text-decoration: none; color: inherit; cursor: pointer; transition: transform 0.3s ease, box-shadow 0.3s ease; display: block;">
                         <div
                             style="width: 100%; height: 150px; margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden;">
-                            <img src="./images/smart-city.png" alt="Industrija"
-                                style="width: 100%; height: 100%; object-fit: cover;">
+                            <picture>
+                                <source srcset="./images/smart-city.webp" type="image/webp">
+                                <img src="./images/smart-city.png" alt="Industrija"
+                                    style="width: 100%; height: 100%; object-fit: cover;" width="520" height="150">
+                            </picture>
                         </div>
                         <h3 style="font-size: 2rem; margin-bottom: 1rem;">Za vašo industrijo</h3>
                         <p style="font-size: 1.1rem; line-height: 1.6; margin-bottom: 1.5rem;">
@@ -168,7 +174,7 @@
                         </div>
                         <div style="margin-top: 2rem;">
                             <a href="https://arss.si/wp-content/uploads/2023/09/ARSS-Leading-the-Way-in-Remote-Water-Metering.pdf"
-                                target="_blank" rel="noopener noreferrer" class="btn-secondary">Prenesi predstavitev
+                                target="_blank" rel="noopener noreferrer" class="btn-secondary" title="Prenesi predstavitev ARSS (PDF)">Prenesi predstavitev
                                 (PDF)</a>
                         </div>
                     </div>
@@ -265,14 +271,12 @@
                             </div>
                             <div class="contact-item">
                                 <span class="label">Telefon:</span>
-                                <span class="value"><a href="tel:+38630680160" class="text-white">+386 30 680
-                                        160</a></span>
-                                480</a></span>
+                                <span class="value"><a href="tel:+38630680160" class="text-white" title="Pokliči ARSS">+386 30 680 160</a></span>
                             </div>
                             <div class="contact-item">
                                 <span class="label">Email:</span>
                                 <span class="value"><a href="mailto:jakahrovat.arss@gmail.com"
-                                        class="text-white">jakahrovat.arss@gmail.com</a></span>
+                                        class="text-white" title="Pošlji email na ARSS">jakahrovat.arss@gmail.com</a></span>
                             </div>
                         </div>
                     </div>
@@ -310,9 +314,10 @@
         </footer>
     </div>
 
-    <script src="./analytics-config.js"></script>
-    <script src="./form-config.js"></script>
-    <script src="./main.js"></script>
+    <script src="./cookie-consent.js" defer></script>
+    <script src="./analytics-config.js" defer></script>
+    <script src="./form-config.js" defer></script>
+    <script src="./main.js" defer></script>
 </body>
 
 </html>

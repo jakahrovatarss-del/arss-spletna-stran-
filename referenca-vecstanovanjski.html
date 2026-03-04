@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <!-- Cookie Consent & Analytics -->
-    <script src="./cookie-consent.js"></script>
+    <!-- Preload hero background for LCP -->
+    <link rel="preload" as="image" href="./images/apartment.webp" type="image/webp" fetchpriority="high">
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reference: Večstanovanjski objekti - ARSS</title>
@@ -24,8 +24,9 @@
         <!-- Navigation -->
         <header class="header">
             <div class="container nav-container">
-                <a href="index.html" class="logo">
-                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo">
+                <a href="index.html" class="logo" title="ARSS - Domov">
+                    <img src="https://arss.si/wp-content/uploads/2022/12/ARSS_logo2022.png" alt="ARSS Logo" width="86"
+                        height="95">
                 </a>
                 <button class="mobile-menu-btn" aria-label="Odpri meni">
                     <span class="bar"></span>
@@ -33,39 +34,40 @@
                     <span class="bar"></span>
                 </button>
                 <nav class="nav-links">
-                    <a href="index.html" class="nav-link">Domov</a>
+                    <a href="index.html" class="nav-link" title="Domov">Domov</a>
 
                     <div class="dropdown">
-                        <a href="gospodinjstva.html" class="nav-link">Gospodinjstva ▾</a>
+                        <a href="gospodinjstva.html" class="nav-link" title="Za gospodinjstva - pametni vodomeri">Gospodinjstva ▾</a>
                         <div class="dropdown-content">
-                            <a href="gospodinjstva.html#features">Prednosti</a>
-                            <a href="gospodinjstva.html#how-it-works">Kako deluje</a>
-                            <a href="gospodinjstva.html#packages">Paketi</a>
-                            <a href="gospodinjstva.html#faq">Pogosta vprašanja</a>
+                            <a href="gospodinjstva.html#features" title="Prednosti za gospodinjstva">Prednosti</a>
+                            <a href="gospodinjstva.html#how-it-works" title="Kako deluje - gospodinjstva">Kako deluje</a>
+                            <a href="gospodinjstva.html#packages" title="Paketi za gospodinjstva">Paketi</a>
+                            <a href="gospodinjstva.html#faq" title="Pogosta vprašanja - gospodinjstva">Pogosta vprašanja</a>
                         </div>
                     </div>
 
                     <div class="dropdown">
-                        <a href="industrija.html" class="nav-link active">Industrija ▾</a>
+                        <a href="industrija.html" class="nav-link active" title="Za industrijo in vodovode">Industrija ▾</a>
                         <div class="dropdown-content">
-                            <a href="merjenje.html">Pametni vodomeri</a>
-                            <a href="komunikacija.html">Komunikacija</a>
-                            <a href="programska-oprema.html">AURA Platforma</a>
-                            <a href="industrija.html#references">Reference</a>
-                            <a href="industrija.html#packages">Paketi</a>
+                            <a href="merjenje.html" title="Pametni vodomeri">Pametni vodomeri</a>
+                            <a href="komunikacija.html" title="Komunikacijske rešitve">Komunikacija</a>
+                            <a href="programska-oprema.html" title="AURA Platforma">AURA Platforma</a>
+                            <a href="industrija.html#references" title="Reference">Reference</a>
+                            <a href="industrija.html#packages" title="Paketi za industrijo">Paketi</a>
                         </div>
                     </div>
 
-                    <a href="index.html#about" class="nav-link">O nas</a>
-                    <a href="index.html#contact" class="nav-link">Kontakt</a>
+                    <a href="index.html#about" class="nav-link" title="Pojdi na sekcijo O nas">O nas</a>
+                    <a href="index.html#contact" class="nav-link" title="Pojdi na kontaktni obrazec">Kontakt</a>
                 </nav>
             </div>
         </header>
 
+        <main>
         <!-- Hero Section -->
         <section class="hero" style="min-height: 60vh;">
             <div class="hero-bg"
-                style="background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(8, 145, 178, 0.4) 100%), url('./images/apartment.png') center/cover no-repeat;">
+                style="background: linear-gradient(135deg, rgba(30, 41, 59, 0.95) 0%, rgba(8, 145, 178, 0.4) 100%), url('./images/apartment.webp') center/cover no-repeat;">
             </div>
             <div class="container">
                 <div class="hero-content">
@@ -153,10 +155,12 @@
                 <div class="text-center" style="margin-top: 4rem;">
                     <h2 class="section-title">Želite podobne rezultate?</h2>
                     <p class="mb-4">Kontaktirajte nas za brezplačen ogled vašega objekta.</p>
-                    <a href="industrija.html#contact" class="btn-primary">Zahtevajte ponudbo</a>
+                    <a href="industrija.html#contact" class="btn-primary" title="Zahtevajte ponudbo za večstanovanjske objekte">Zahtevajte ponudbo</a>
                 </div>
             </div>
         </section>
+
+        </main>
 
         <footer class="footer">
             <div class="container text-center">
@@ -165,7 +169,8 @@
         </footer>
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./cookie-consent.js" defer></script>
+    <script src="./main.js" defer></script>
 </body>
 
 </html>

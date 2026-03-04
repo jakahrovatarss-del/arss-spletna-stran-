@@ -1,0 +1,7 @@
+Impact of Reducing Non-Revenue Water (NRW)
+on Energy Costs
+Water utilities consume 0.4–0.8 kWh of energy per m³ of pumped water.
+Every m³ of NRW saved reduces energy consumption proportionally.
+NRW reduction lowers pumping hours, pressure demand, and treatment costs.
+Energy represents 25–40% of total water utility operational costs.
+Example: Reducing 50,000 m³/year saves ~27,500 kWh → ~4,100 €/year.
